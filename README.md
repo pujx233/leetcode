@@ -15,3 +15,31 @@
 #### [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
 
 #### [237. 删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)
+
+#### [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
+
+* 递归法、迭代法
+
+#### [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)
+
+* 要求返回完整的树，所以采用分治法
+
+#### [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
+
+* 只要求返回数量，使用动态规划
+
+#### [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+* 中序遍历、递归
+
+#### [509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
+
+* 动态规划
+
+#### [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
+
+* 动态规划
+
+#### [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)  
+
+* 深度搜索、广度搜索
