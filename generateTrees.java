@@ -7,7 +7,7 @@ import java.util.List;
  * */
 
 public class generateTrees {
-    public class TreeNode {
+    public static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -22,6 +22,8 @@ public class generateTrees {
 
     /**
      * 分治法
+     * 将 连续的数，一个个遍历，作为根节点，
+     * 每次遍历中，将左边的数组和右边的数组分别进行构建子树，并接到当前根节点上
      * */
 
     class Solution {
@@ -50,4 +52,12 @@ public class generateTrees {
         }
 
     }
+
+    public static void main(String args[]){
+        TreeNode a = new TreeNode(2);
+        TreeNode b = new TreeNode(1);
+        TreeNode c = new TreeNode(3,a,b);
+
+    }
+
 }

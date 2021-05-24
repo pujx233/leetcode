@@ -43,3 +43,13 @@
 #### [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)  
 
 * 深度搜索、广度搜索
+
+#### [146. LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
+
+* LinkedHashMap
+* 并不会写，要时长回顾
+
+#### [99. 恢复二叉搜索树](https://leetcode-cn.com/problems/recover-binary-search-tree/)
+
+* 中序遍历
+* 难度为Hard是因为该题鼓励使用Morris算法进行二叉树遍历，暂时不考虑
