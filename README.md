@@ -53,3 +53,9 @@
 
 * 中序遍历
 * 难度为Hard是因为该题鼓励使用Morris算法进行二叉树遍历，暂时不考虑
+
+#### [222. 完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/)
+
+* DFS (常规解法递归)
+* BFS (超时)
+* 利用完全二叉树的特性
