@@ -1,3 +1,5 @@
+package 字符串;
+
 public class addStrings {
 
     public static void main(String []args){

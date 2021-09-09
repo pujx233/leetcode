@@ -33,6 +33,7 @@ public class levelOrder_2 {
 
             while(!queue.isEmpty()){
                 int n = queue.size();
+
                 List<Integer> level = new ArrayList<>();
                 for(int i = 0;i<n;i++){
                     TreeNode node  = queue.poll();
