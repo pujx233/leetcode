@@ -1,4 +1,4 @@
-## 每日一题
+每日一题
 
 #### [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 
@@ -52,7 +52,10 @@
 
 #### [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 
-- [x] 中序遍历、递归
+- [x] 递归
+- [x] 中序遍历
+  - [x] 递归
+  - [x] 迭代
 
 #### [509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
 
@@ -242,12 +245,12 @@
 #### [5. 最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/)
 
 - [x] 动态规划
+- [ ] 中心扩展算法
 
 #### [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
 
 - [x] 动态规划
 
-- [x] 中心扩展算法
 
 #### [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 
@@ -360,7 +363,7 @@
 #### [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
 - [ ] 递归
-- [ ] 迭代
+- [ ] 迭代（暂时不想看了）
 
 #### [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 
@@ -415,7 +418,10 @@
 
 #### [147. 对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/)
 
-- [ ] 插入排序
+- [x] 插入排序
+
+  - [x] 从前往后找插入点
+  - [x] pre 作为指针，在重新插入的时候发挥作用
 
 #### [1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)
 
@@ -434,13 +440,21 @@
 - [x] 类似练习里OnSortArray的思路，单指针进行交换
 - [x] 双指针一步到位
 
+#### [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+
+- [x] 快慢指针
+
 #### [459. 重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/)
 
-- [ ] KMP 算法
+- [x] KMP 算法
 
 ####  [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/)
 
-- [ ] KMP 算法
+- [x] KMP 算法
+
+#### [1392. 最长快乐前缀](https://leetcode-cn.com/problems/longest-happy-prefix/)
+
+- [x] KMP算法
 
 #### [补充：求岛屿头尾最短路径](https://blog.csdn.net/weixin_45907832/article/details/107214186)
 
@@ -456,3 +470,71 @@
   - [x] 中缀表达式转前缀表达式
   - [x] 参考105：从前序与中序遍历序列构造二叉树
 
+#### [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
+
+- [x] 递归
+  - [x] 强调了根节点到叶子节点，判断起来会方便一些
+- [x] 广度优先遍历
+
+#### [113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)
+
+- [x] 广度优先搜索
+  - [x] 记录父子节点情况
+- [x] 深度优先搜索
+  - [x] 注意 List 内部添加list的时候，要使用类似这样的表达`ans.add(new LinkedList<>(path));`
+
+#### [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+- [x] 二分查找
+  - [x] 如何弄清边界问题
+  - [x] 当左边界要更新为`l = mid,r = mid-1`时，我们就令 `mid =(l + r + 1)/2`
+  - [x] 当右边界要更新为`r = mid,l = mid+1`时，我们就令 `mid =(l + r)/2`
+
+#### [875. 爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas/)
+
+- [x] 如何弄清边界问题
+
+#### [剑指 Offer 45. 把数组排成最小的数](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)
+
+- [x] `l+r >r+l`,通过字符串相加的方式可以比较两个字符串的大小
+  - [ ] lambda排序 `Arrays.sort(str,(x,y)->(x+y).compareTo(y+x));`
+  - [ ] 快排 字符串自身也可以compareTo
+
+#### [179. 最大数](https://leetcode-cn.com/problems/largest-number/)
+
+- [x] lambda排序 `Arrays.sort(str,(x,y)->(x+y).compareTo(y+x));`
+- [x] 快排 字符串自身也可以compareTo
+
+#### [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
+
+- [x] 贪心算法
+
+#### [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
+
+- [ ] 贪心算法
+  - [ ] 正向查找O(n)
+  - [ ] 反向查找O(n^2)
+
+#### [面试题 17.22. 单词转换](https://leetcode-cn.com/problems/word-transformer-lcci/)
+
+- [x] 广度优先搜索
+  - [x] 和迷宫问题一样，为了防止死循环，要有一个判断是否访问的标志
+  - [x] HashMap存储前驱
+
+#### [253. Meeting Rooms II 会议室之二](https://www.cnblogs.com/grandyang/p/5244720.html)
+
+- [x] 
+
+#### [78. 子集](https://leetcode-cn.com/problems/subsets/)
+
+- [ ] 回溯算法
+
+- [ ] 迭代法实现子集枚举
+
+  - [ ] 
+    子集类型题目可以使用位运算
+    
+
+#### [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/)
+
+- [x] 回溯算法

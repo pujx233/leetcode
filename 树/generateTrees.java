@@ -28,7 +28,7 @@ public class generateTrees {
      * 每次遍历中，将左边的数组和右边的数组分别进行构建子树，并接到当前根节点上
      * */
 
-    class Solution {
+    static class Solution {
         public List<TreeNode> generateTrees(int n) {
             return generateTrees(1, n);
         }
@@ -60,6 +60,7 @@ public class generateTrees {
         TreeNode b = new TreeNode(1);
         TreeNode c = new TreeNode(3,a,b);
 
+        new Solution().generateTrees(3);
     }
 
 }

@@ -25,11 +25,11 @@ public class implementStrStr {
 
             int[] next = new int [m+1];
 
-            for(int i = 2,j = 0; i <= m;i++){
+            for(int i = 2,j=0;i<=m;i++){
                 while (j>0 && p[i]!=p[j+1]){
                     j = next[j];
                 }
-                if(p[i] == p[j+1]){
+                if(p[i]==p[j+1]){
                     j++;
                 }
                 next[i] = j;
@@ -51,7 +51,7 @@ public class implementStrStr {
 
     public static void main(String args[]){
         Solution solution = new Solution();
-        System.out.println(solution.strStr("aaavbbaa", "bba"));
+        System.out.println(solution.strStr("aaavbbaa", "ababacd"));
     }
 
 }
