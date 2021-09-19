@@ -5,7 +5,22 @@ package 数组;
  * 为避免会议冲突，同时要考虑充分利用会议室资源，请你计算至少需要多少间会议室，才能满足这些会议安排。
  * */
 
-public class meetingRoom_2 {
-
-
+import java.util.*;
+class meetingRoom_2 {
+    public int minMeetingRooms(int[][] intervals) {
+        if(intervals.length == 0) return 0;
+        Arrays.sort(intervals,Comparator.comparingInt(o->o[0]));
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        int rooms = 0;
+        for(int i=0; i<intervals.length; i++) {
+            minHeap.offer(intervals[i][1]);
+            if (intervals[i][0] < minHeap.peek()) {
+                rooms ++;
+            } else {
+                minHeap.poll();
+            }
+        }
+        return rooms;
+    }
 }
+

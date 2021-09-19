@@ -362,7 +362,7 @@
 
 #### [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
-- [ ] 递归
+- [x] 递归
 - [ ] 迭代（暂时不想看了）
 
 #### [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
@@ -415,6 +415,9 @@
 #### [148. 排序链表](https://leetcode-cn.com/problems/sort-list/)
 
 - [ ] 归并排序
+  - [ ] 迭代
+  - [ ] 递归
+- [ ] 快速排序（链表的拼接很少见）
 
 #### [147. 对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/)
 
@@ -523,18 +526,88 @@
 
 #### [253. Meeting Rooms II 会议室之二](https://www.cnblogs.com/grandyang/p/5244720.html)
 
-- [x] 
+- [ ] 优先队列实现最小堆
 
 #### [78. 子集](https://leetcode-cn.com/problems/subsets/)
 
-- [ ] 回溯算法
+- [x] 回溯算法
 
-- [ ] 迭代法实现子集枚举
+- [x] 迭代法实现子集枚举
 
-  - [ ] 
+  - [x] 
     子集类型题目可以使用位运算
     
 
 #### [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/)
 
 - [x] 回溯算法
+
+
+#### [40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)
+
+- [x] 回溯算法
+  - [x] 注意可以用HashSet去重，不过会超时
+  - [x] 简便的方法是由于重复的会在回溯的第一阶段就计算，因此指针指向第二个及以后的时候进行顺延
+
+#### [面试题 01.06. 字符串压缩](https://leetcode-cn.com/problems/compress-string-lcci/)
+
+- [x] 标记字母和次数进行相加
+  - [x] 注意字符串不能直接反转，可以转换成StringBuffer再反转
+
+#### [443. 压缩字符串](https://leetcode-cn.com/problems/string-compression/)
+
+- [x] 快慢指针
+  - [x] 写的慢指针要从头开始，这样才能避免出现偏差
+  - [x] 邻接条件很多很烦
+
+#### [43. 字符串相乘](https://leetcode-cn.com/problems/multiply-strings/)
+
+- [x] 用列竖式很麻烦，很容易错
+  - [x] `num1[i]` 和 `num2[j]` 的乘积对应的就是`res[i+j]` 和 `res[i+j+1]` 这两个位置。
+
+#### [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
+
+- [x] 前缀和处理区间问题
+  - [x] 使用HashMap优化
+
+#### [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/)
+
+- [x] 动态规划
+- [ ] 考察空间复杂度的优化
+  - [ ] 优化一：由于`dp[i][j] = dp[i-1][j] + dp[i][j-1]`，因此只需要保留当前行与上一行的数据 (在动态方程中，即`pre[j] = dp[i-1][j]`)，两行，空间复杂度O(2n)；
+  - [ ] 优化二：`cur[j] += cur[j-1]`, 即`cur[j] = cur[j] + cur[j-1]` 等价于思路二`cur[j] = pre[j] + cur[j-1]`，因此空间复杂度为O(n)
+
+#### [64. 最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)
+
+- [x] 动态规划
+
+#### [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
+
+- [ ] 双指针
+
+#### [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
+
+- [x] 位运算（异或满足交换律和结合律）
+
+#### [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)
+
+- [x] 排序求中值
+- [x] 哈希表
+- [x] 投票算法（核心是对拼消耗）
+
+#### [14. 最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/)
+
+- [x] 横向扫描
+- [x] 纵向扫描
+
+#### [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
+
+- [x] 倒序遍历
+
+#### [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
+
+- [x] 寻找最大值
+- [x] 线性搜索
+- [x] 二分搜索
+  - [ ] 要注意题目条件，在题目描述中出现了 `nums[-1] = nums[n] = -∞`，这就代表着 **只要数组中存在一个元素比相邻元素大，那么沿着它一定可以找到一个峰值**
+

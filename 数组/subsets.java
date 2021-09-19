@@ -11,26 +11,27 @@ import java.util.List;
 
 public class subsets {
 
-    class Solution {
+    public static class Solution {
 
-        List<Integer> res = new ArrayList<Integer>();
         List<List<Integer>> ans = new ArrayList<List<Integer>>();
 
         public List<List<Integer>> subsets(int[] nums) {
-            backtrack(0,nums);
+            if(nums.length == 0){
+                return ans;
+            }
+            backtrack(0,nums,new ArrayList<Integer>());
 
             return ans;
         }
 
-        public void backtrack(int len,int[] nums){
-            if(len == nums.length){
-                ans.add(new ArrayList<Integer>(res));
-            }
+        public void backtrack(int begin,int[] nums,ArrayList<Integer> tmp){
+            ans.add(new ArrayList<>(tmp));
+            for(int i = begin;i<nums.length;i++){
+                tmp.add(nums[i]);
+                backtrack(i+1,nums,tmp);
+                tmp.remove(tmp.size()-1);
 
-            res.add(nums[len]);
-            backtrack(len+1,nums);
-            res.remove(res.size()-1);
-            backtrack(len+1,nums);
+            }
         }
     }
 
@@ -56,5 +57,10 @@ public class subsets {
             }
             return ans;
         }
+    }
+
+    public static void main(String[] args){
+        Solution solution = new Solution();
+        System.out.println(solution.subsets(new int[] {1,2,3}));
     }
 }

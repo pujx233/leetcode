@@ -362,8 +362,8 @@
 
 #### [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
-- [ ] 递归
-- [ ] 迭代
+- [x] 递归
+- [ ] 迭代（暂时不想看了）
 
 #### [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 
@@ -415,6 +415,9 @@
 #### [148. 排序链表](https://leetcode-cn.com/problems/sort-list/)
 
 - [ ] 归并排序
+  - [ ] 迭代
+  - [ ] 递归
+- [ ] 快速排序（链表的拼接很少见）
 
 #### [147. 对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/)
 
@@ -520,4 +523,42 @@
 - [x] 广度优先搜索
   - [x] 和迷宫问题一样，为了防止死循环，要有一个判断是否访问的标志
   - [x] HashMap存储前驱
+
+#### [253. Meeting Rooms II 会议室之二](https://www.cnblogs.com/grandyang/p/5244720.html)
+
+- [x] 
+
+#### [78. 子集](https://leetcode-cn.com/problems/subsets/)
+
+- [x] 回溯算法
+
+- [x] 迭代法实现子集枚举
+
+  - [x] 
+    子集类型题目可以使用位运算
+    
+
+#### [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/)
+
+- [x] 回溯算法
+
+
+#### [40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)
+
+- [x] 回溯算法
+  - [x] 注意可以用HashSet去重，不过会超时
+  - [x] 简便的方法是由于重复的会在回溯的第一阶段就计算，因此指针指向第二个及以后的时候进行顺延
+
+#### [面试题 01.06. 字符串压缩](https://leetcode-cn.com/problems/compress-string-lcci/)
+
+- [x] 标记字母和次数进行相加
+  - [x] 注意字符串不能直接反转，可以转换成StringBuffer再反转
+
+#### [443. 压缩字符串](https://leetcode-cn.com/problems/string-compression/)
+
+- [x] 快慢指针
+  - [x] 写的慢指针要从头开始，这样才能避免出现偏差
+  - [x] 邻接条件很多很烦
+
+#### [43. 字符串相乘](https://leetcode-cn.com/problems/multiply-strings/)
 

@@ -10,8 +10,8 @@ import java.util.Random;
 public class sortArray {
 
     public static void main(String[] args) {
-        int[] nums = {3,2,1,5,6,4};
-        Solution_7 solution = new Solution_7();
+        int[] nums = {3, 2, 1, 5, 6, 4};
+        Solution_4 solution = new Solution_4();
         int[] res = solution.sortArray(nums);
         System.out.println(Arrays.toString(res));
     }
@@ -19,7 +19,7 @@ public class sortArray {
 
     /**
      * 选择排序
-     * */
+     */
 
     static class Solution_1 {
         public int[] sortArray(int[] nums) {
@@ -27,10 +27,10 @@ public class sortArray {
 
             int minIndex = -1;
 
-            for(int i = 0;i<len-1;i++){
+            for (int i = 0; i < len - 1; i++) {
                 minIndex = i;
-                for(int j = i+1;j<len;j++){
-                    if(nums[minIndex]>nums[j]){
+                for (int j = i + 1; j < len; j++) {
+                    if (nums[minIndex] > nums[j]) {
                         minIndex = j;
                     }
                 }
@@ -47,7 +47,7 @@ public class sortArray {
 
     /**
      * 插入排序
-     * **/
+     **/
 
 
     static class Solution_2 {
@@ -72,20 +72,21 @@ public class sortArray {
 
     /**
      * 冒泡排序：超时
-     * */
+     */
 
     public static class Solution_3 {
 
         int temp;
+
         public int[] sortArray(int[] nums) {
             int len = nums.length;
-            for (int i = 0; i < len-1; i++) {
-                int flag=0;
-                for (int j = 0; j < len-1-i; j++) {
-                    if(nums[j]>nums[j+1]){
+            for (int i = 0; i < len - 1; i++) {
+                int flag = 0;
+                for (int j = 0; j < len - 1 - i; j++) {
+                    if (nums[j] > nums[j + 1]) {
                         temp = nums[j];
-                        nums[j] = nums[j+1];
-                        nums[j+1] = temp;
+                        nums[j] = nums[j + 1];
+                        nums[j + 1] = temp;
                         flag = 1;//不是有序的，flags设置为1；
                     }
 
@@ -104,7 +105,7 @@ public class sortArray {
      * 快速排序
      * 要注意随机取划分函数的主元
      * 注意快慢指针的使用
-     * */
+     */
 
     public static class Solution_4 {
 
@@ -113,11 +114,11 @@ public class sortArray {
             return nums;
         }
 
-        public void randomizedQuickSort(int []nums,int l,int r){
-            if(l<r){
-                int pos = randomizedPartition(nums,l,r);
-                randomizedQuickSort(nums,l,pos-1);
-                randomizedQuickSort(nums,pos+1,r);
+        public void randomizedQuickSort(int[] nums, int l, int r) {
+            if (l < r) {
+                int pos = randomizedPartition(nums, l, r);
+                randomizedQuickSort(nums, l, pos - 1);
+                randomizedQuickSort(nums, pos + 1, r);
             }
         }
 
@@ -127,9 +128,9 @@ public class sortArray {
             return partition(nums, l, r);
         }
 
-        public int partition(int []nums,int l,int r){
+        public int partition(int[] nums, int l, int r) {
             int pivot = nums[r];
-            int i = l-1;
+            int i = l - 1;
             for (int j = l; j <= r - 1; ++j) {
                 if (nums[j] <= pivot) {
                     i = i + 1;
@@ -151,7 +152,7 @@ public class sortArray {
     /**
      * 堆排序
      * len是长度-1
-     * */
+     */
     public static class Solution_5 {
 
         public int[] sortArray(int[] nums) {
@@ -159,18 +160,18 @@ public class sortArray {
             return nums;
         }
 
-        public void heapSort(int []nums){
+        public void heapSort(int[] nums) {
             int len = nums.length;
-            buildMaxHeap(nums, len-1);
-            for (int i = len-1; i >= 1; --i) {
+            buildMaxHeap(nums, len - 1);
+            for (int i = len - 1; i >= 1; --i) {
                 swap(nums, i, 0);
                 len -= 1;
-                maxHeapify(nums, 0, len-1);
+                maxHeapify(nums, 0, len - 1);
             }
         }
 
         public void maxHeapify(int[] nums, int i, int len) {
-            for (; (i << 1) + 1 <= len;) {
+            for (; (i << 1) + 1 <= len; ) {
                 int lson = (i << 1) + 1;
                 int rson = (i << 1) + 2;
                 int large;
@@ -206,16 +207,17 @@ public class sortArray {
 
     /**
      * 归并排序
-     * */
+     */
     public static class Solution_6 {
-        int [] tmp;
+        int[] tmp;
+
         public int[] sortArray(int[] nums) {
             tmp = new int[nums.length];
-            mergeSort(nums,0,nums.length-1);
+            mergeSort(nums, 0, nums.length - 1);
             return nums;
         }
 
-        public void mergeSort(int []nums,int l,int r){
+        public void mergeSort(int[] nums, int l, int r) {
             if (l >= r) {
                 return;
             }
@@ -223,7 +225,7 @@ public class sortArray {
             mergeSort(nums, l, mid);
             mergeSort(nums, mid + 1, r);
 
-            int i = l,j = mid+1;
+            int i = l, j = mid + 1;
             int cnt = 0;
             while (i <= mid && j <= r) {
                 if (nums[i] <= nums[j]) {
@@ -241,53 +243,6 @@ public class sortArray {
             for (int k = 0; k < r - l + 1; ++k) {
                 nums[k + l] = tmp[k];
             }
-        }
-    }
-
-    /**
-     * 背诵测试处
-     * */
-
-    public static class Solution_7{
-        public int[] sortArray(int[] nums) {
-
-            randomQuickSort(nums,0,nums.length-1);
-
-            return nums;
-        }
-
-        public void randomQuickSort(int []nums,int l,int r){
-            if(l<r){
-                int pos = randomPartition(nums,l,r);
-                randomQuickSort(nums,l,pos-1);
-                randomQuickSort(nums,pos+1,r);
-            }
-        }
-
-        public int randomPartition(int []nums,int l,int r){
-            int i = new Random().nextInt(r-l+1)+l;
-            swap(nums,i,r);
-            return partition(nums,l,r);
-        }
-
-        public int partition(int []nums,int l,int r){
-            int pivot = nums[r];
-            int i = l-1;
-            for(int j = l;j<=r-1;j++){
-                if(nums[j]<=pivot){
-                    i++;
-                    swap(nums,i,j);
-                }
-            }
-
-            swap(nums,i+1,r);
-            return i+1;
-        }
-
-        public void swap(int []nums,int m,int n){
-            int temp = nums[m];
-            nums[m] = nums[n];
-            nums[n] = temp;
         }
     }
 
