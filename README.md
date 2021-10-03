@@ -690,10 +690,10 @@
 
   - [x] split("",-1)处理多个重复
 
-  - [x] ```java
-    IP.chars().filter(ch -> ch == '.').count() == 3  //计算字符串中字符的数量
-    ```
-    
-  - [x] ```java
-    Character.isDigit(ch)
-    ```
+```java
+IP.chars().filter(ch -> ch == '.').count() == 3  //计算字符串中字符的数量
+```
+
+```java
+Character.isDigit(ch)
+```
