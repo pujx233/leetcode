@@ -63,7 +63,7 @@ public class mergeTwoSortedLists {
 
             /*其实没必要这么麻烦，应当先判断l1,l2两个链表头部的最小值，作为新链表的头部，然后循环迭代输出即可
             * */
-            ListNode head = new ListNode();
+            ListNode head = new ListNode(0);
             ListNode last = head;
 
             while(l1!=null && l2!=null){

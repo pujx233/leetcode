@@ -1,4 +1,6 @@
-每日一题
+[TOC]
+
+### 每日一题
 
 #### [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 
@@ -611,3 +613,87 @@
 - [x] 二分搜索
   - [ ] 要注意题目条件，在题目描述中出现了 `nums[-1] = nums[n] = -∞`，这就代表着 **只要数组中存在一个元素比相邻元素大，那么沿着它一定可以找到一个峰值**
 
+#### [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)
+
+- [x] 动态规划
+- [x] 单调栈
+- [x] 双指针
+
+#### [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/)
+
+- [x] 注意不超出范围的判断
+- [ ] 正数和负数怎样算
+
+#### [23. 合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+
+- [x] 顺序合并
+- [ ] 归并合并
+- [ ] 优先队列（注意链表的空间变化）
+
+#### [204. 计数质数](https://leetcode-cn.com/problems/count-primes/)
+
+- [x] 埃式筛
+
+#### [1160. 拼写单词](https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/)
+
+- [x] 哈希表
+- [ ] hashmap.getOrDefault
+
+#### [93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/)
+
+- [x] 回溯算法+深度优先遍历
+  - [ ] 回溯算法要注意先剪枝
+  - [x] 泛型括号内设定空间大小可降低占用空间
+
+#### [48. 旋转图像](https://leetcode-cn.com/problems/rotate-image/)
+
+- [x] 水平翻转+对角线翻转
+
+#### [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
+
+- [x] 回溯算法+深度优先遍历
+- [x] 判断具体的返回条件
+
+#### [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+
+- [x] 二分查找
+  - [ ] 比较前只考虑最右的特殊情况，是因为我们只需要在二分中找到大于等于target值的最小值
+
+#### [852. 山脉数组的峰顶索引](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)
+
+- [x] 二分查找
+
+#### [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
+
+- [x] 二分查找
+  - [ ] 比较的对象要注意
+
+#### [165. 比较版本号](https://leetcode-cn.com/problems/compare-version-numbers/)
+
+- [x] 模拟
+
+#### [128. 最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)
+
+- [x] 哈希表查找的时间复杂度为O(1)，因此考虑使用哈希表查找连续的数字。
+
+#### [221. 最大正方形](https://leetcode-cn.com/problems/maximal-square/)
+
+- [x] 动态规划
+
+  ```java
+  dp[row + 1][col + 1] = Math.min(Math.min(dp[row + 1][col], dp[row][col + 1]), dp[row][col]) + 1;
+  ```
+
+#### [468. 验证IP地址](https://leetcode-cn.com/problems/validate-ip-address/)
+
+- [x] 分治法
+
+  - [x] split("",-1)处理多个重复
+
+  - [x] ```java
+    IP.chars().filter(ch -> ch == '.').count() == 3  //计算字符串中字符的数量
+    ```
+    
+  - [x] ```java
+    Character.isDigit(ch)
+    ```

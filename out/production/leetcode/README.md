@@ -1,4 +1,6 @@
-每日一题
+[TOC]
+
+### 每日一题
 
 #### [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 
@@ -526,7 +528,7 @@
 
 #### [253. Meeting Rooms II 会议室之二](https://www.cnblogs.com/grandyang/p/5244720.html)
 
-- [x] 
+- [ ] 优先队列实现最小堆
 
 #### [78. 子集](https://leetcode-cn.com/problems/subsets/)
 
@@ -562,3 +564,116 @@
 
 #### [43. 字符串相乘](https://leetcode-cn.com/problems/multiply-strings/)
 
+- [x] 用列竖式很麻烦，很容易错
+  - [x] `num1[i]` 和 `num2[j]` 的乘积对应的就是`res[i+j]` 和 `res[i+j+1]` 这两个位置。
+
+#### [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
+
+- [x] 前缀和处理区间问题
+  - [x] 使用HashMap优化
+
+#### [62. 不同路径](https://leetcode-cn.com/problems/unique-paths/)
+
+- [x] 动态规划
+- [ ] 考察空间复杂度的优化
+  - [ ] 优化一：由于`dp[i][j] = dp[i-1][j] + dp[i][j-1]`，因此只需要保留当前行与上一行的数据 (在动态方程中，即`pre[j] = dp[i-1][j]`)，两行，空间复杂度O(2n)；
+  - [ ] 优化二：`cur[j] += cur[j-1]`, 即`cur[j] = cur[j] + cur[j-1]` 等价于思路二`cur[j] = pre[j] + cur[j-1]`，因此空间复杂度为O(n)
+
+#### [64. 最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)
+
+- [x] 动态规划
+
+#### [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
+
+- [ ] 双指针
+
+#### [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
+
+- [x] 位运算（异或满足交换律和结合律）
+
+#### [169. 多数元素](https://leetcode-cn.com/problems/majority-element/)
+
+- [x] 排序求中值
+- [x] 哈希表
+- [x] 投票算法（核心是对拼消耗）
+
+#### [14. 最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/)
+
+- [x] 横向扫描
+- [x] 纵向扫描
+
+#### [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
+
+- [x] 倒序遍历
+
+#### [162. 寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
+
+- [x] 寻找最大值
+- [x] 线性搜索
+- [x] 二分搜索
+  - [ ] 要注意题目条件，在题目描述中出现了 `nums[-1] = nums[n] = -∞`，这就代表着 **只要数组中存在一个元素比相邻元素大，那么沿着它一定可以找到一个峰值**
+
+#### [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)
+
+- [x] 动态规划
+- [x] 单调栈
+- [x] 双指针
+
+
+
+#### [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/)
+
+- [x] 注意不超出范围的判断
+- [ ] 正数和负数怎样算
+
+#### [23. 合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+
+- [x] 顺序合并
+- [ ] 归并合并
+- [ ] 优先队列（注意链表的空间变化）
+
+#### [204. 计数质数](https://leetcode-cn.com/problems/count-primes/)
+
+- [x] 埃式筛
+
+#### [1160. 拼写单词](https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/)
+
+- [x] 哈希表
+- [ ] hashmap.getOrDefault
+
+#### [93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/)
+
+- [x] 回溯算法+深度优先遍历
+  - [ ] 回溯算法要注意先剪枝
+  - [x] 泛型括号内设定空间大小可降低占用空间
+
+#### [48. 旋转图像](https://leetcode-cn.com/problems/rotate-image/)
+
+- [x] 水平翻转+对角线翻转
+
+#### [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
+
+- [x] 回溯算法+深度优先遍历
+- [x] 判断具体的返回条件
+
+#### [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+
+- [x] 二分查找
+  - [ ] 比较前只考虑最右的特殊情况，是因为我们只需要在二分中找到大于等于target值的最小值
+
+#### [852. 山脉数组的峰顶索引](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)
+
+- [x] 二分查找
+
+#### [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
+
+- [x] 二分查找
+  - [ ] 比较的对象要注意
+
+#### [165. 比较版本号](https://leetcode-cn.com/problems/compare-version-numbers/)
+
+- [x] 模拟
+
+#### [128. 最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)
+
+- [ ] 哈希表查找的时间复杂度为O(1)，因此考虑使用哈希表查找连续的数字。

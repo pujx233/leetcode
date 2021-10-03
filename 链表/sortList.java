@@ -205,7 +205,7 @@ public class sortList {
         head.next.next = new ListNode(1);
         head.next.next.next = new ListNode(3);
 
-        Solution_2 solution = new Solution_2();
+        Solution_3 solution = new Solution_3();
         solution.sortList(head);
     }
 }
