@@ -697,3 +697,30 @@ IP.chars().filter(ch -> ch == '.').count() == 3  //计算字符串中字符的�
 ```java
 Character.isDigit(ch)
 ```
+
+#### [227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
+
+- [x] 栈处理符号* 、/
+
+#### [224. 基本计算器](https://leetcode-cn.com/problems/basic-calculator/)
+
+- [ ] 栈处理+、-
+
+#### [32. 最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+
+- [x] 动态规划
+- [x] 栈
+
+#### [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/)
+
+- [x] 滑动窗口
+
+```java
+Iterator iterator = orient.entrySet().iterator();
+while(iterator.hasNext){
+    Map.Entry entry = (Map.Entry)iterator.next();
+    Character key = (Character)entry.getKey(); 
+    Integer value = (Integer)entry.getValue();
+}
+```
+

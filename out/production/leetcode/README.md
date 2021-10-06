@@ -619,8 +619,6 @@
 - [x] 单调栈
 - [x] 双指针
 
-
-
 #### [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/)
 
 - [x] 注意不超出范围的判断
@@ -676,4 +674,34 @@
 
 #### [128. 最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)
 
-- [ ] 哈希表查找的时间复杂度为O(1)，因此考虑使用哈希表查找连续的数字。
+- [x] 哈希表查找的时间复杂度为O(1)，因此考虑使用哈希表查找连续的数字。
+
+#### [221. 最大正方形](https://leetcode-cn.com/problems/maximal-square/)
+
+- [x] 动态规划
+
+  ```java
+  dp[row + 1][col + 1] = Math.min(Math.min(dp[row + 1][col], dp[row][col + 1]), dp[row][col]) + 1;
+  ```
+
+#### [468. 验证IP地址](https://leetcode-cn.com/problems/validate-ip-address/)
+
+- [x] 分治法
+
+  - [x] split("",-1)处理多个重复
+
+```java
+IP.chars().filter(ch -> ch == '.').count() == 3  //计算字符串中字符的数量
+```
+
+```java
+Character.isDigit(ch)
+```
+
+#### [227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
+
+- [x] 栈处理符号* 、/
+
+#### [224. 基本计算器](https://leetcode-cn.com/problems/basic-calculator/)
+
+- [ ] 栈处理+、-
