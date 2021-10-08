@@ -724,5 +724,16 @@ while(iterator.hasNext){
 }
 ```
 
+#### [74. 搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/)
 
+- [x] 两次二分查找
+- [x] 一次二分查找
 
+#### [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)
+
+- [x] 模拟
+- [ ] 二分
+
+#### [41. 缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
+
+- [x] 数组实现哈希
