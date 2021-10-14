@@ -1,4 +1,4 @@
-package åŠ¨æ€è§„åˆ’;
+package ¶¯Ì¬¹æ»®;
 
 public class editDistance {
     public static void main(String []args){
@@ -13,10 +13,10 @@ public class editDistance {
                 return n+m;
             }
 
-            // DP æ•°ç»„
+            // DP Êı×é
             int[][] D = new int[n + 1][m + 1];
 
-            // è¾¹ç•ŒçŠ¶æ€åˆå§‹åŒ–
+            // ±ß½ç×´Ì¬³õÊ¼»¯
             for (int i = 0; i < n + 1; i++) {
                 D[i][0] = i;
             }

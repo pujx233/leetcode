@@ -1,15 +1,15 @@
-package æ ˆ;
+package Õ»;
 
 import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * è¯·ä½ ä»…ä½¿ç”¨ä¸¤ä¸ªæ ˆå®žçŽ°å…ˆå…¥å…ˆå‡ºé˜Ÿåˆ—ã€‚é˜Ÿåˆ—åº”å½“æ”¯æŒä¸€èˆ¬é˜Ÿåˆ—æ”¯æŒçš„æ‰€æœ‰æ“ä½œï¼ˆpushã€popã€peekã€emptyï¼‰ï¼š
+ * ÇëÄã½öÊ¹ÓÃÁ½¸öÕ»ÊµÏÖÏÈÈëÏÈ³ö¶ÓÁÐ¡£¶ÓÁÐÓ¦µ±Ö§³ÖÒ»°ã¶ÓÁÐÖ§³ÖµÄËùÓÐ²Ù×÷£¨push¡¢pop¡¢peek¡¢empty£©£º
  *
- * æ€è·¯
- * å°†ä¸€ä¸ªæ ˆå½“ä½œè¾“å…¥æ ˆ,ç”¨äºŽåŽ‹å…¥pushä¼ å…¥çš„æ•°æ®;å¦ä¸€ä¸ªæ ˆå½“ä½œè¾“å‡ºæ ˆï¼Œç”¨äºŽpopå’Œpeekæ“ä½œã€‚
- * æ¯æ¬¡popæˆ–peekæ—¶ï¼Œè‹¥è¾“å‡ºæ ˆä¸ºç©ºåˆ™å°†è¾“å…¥æ ˆçš„å…¨éƒ¨æ•°æ®ä¾æ¬¡å¼¹å‡ºå¹¶åŽ‹å…¥è¾“å‡ºæ ˆï¼Œ
- * è¿™æ ·è¾“å‡ºæ ˆä»Žæ ˆé¡¶å¾€æ ˆåº•çš„é¡ºåºå°±æ˜¯é˜Ÿåˆ—ä»Žé˜Ÿé¦–å¾€é˜Ÿå°¾çš„é¡ºåºã€‚
+ * Ë¼Â·
+ * ½«Ò»¸öÕ»µ±×÷ÊäÈëÕ»,ÓÃÓÚÑ¹Èëpush´«ÈëµÄÊý¾Ý;ÁíÒ»¸öÕ»µ±×÷Êä³öÕ»£¬ÓÃÓÚpopºÍpeek²Ù×÷¡£
+ * Ã¿´Îpop»òpeekÊ±£¬ÈôÊä³öÕ»Îª¿ÕÔò½«ÊäÈëÕ»µÄÈ«²¿Êý¾ÝÒÀ´Îµ¯³ö²¢Ñ¹ÈëÊä³öÕ»£¬
+ * ÕâÑùÊä³öÕ»´ÓÕ»¶¥ÍùÕ»µ×µÄË³Ðò¾ÍÊÇ¶ÓÁÐ´Ó¶ÓÊ×Íù¶ÓÎ²µÄË³Ðò¡£
  *
  * */
 

@@ -737,3 +737,19 @@ while(iterator.hasNext){
 #### [41. 缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
 
 - [x] 数组实现哈希
+
+#### [316. 去除重复字母](https://leetcode-cn.com/problems/remove-duplicate-letters/)
+
+- [x] 贪心 + 单调栈
+
+```
+sb.deleteCharAt(i)
+```
+
+```
+s.indexOf(stack.peek(), i) > 0
+```
+
+#### [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
+
+- [x] 单调栈

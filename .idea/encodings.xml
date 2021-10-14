@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK" addBOMForNewFiles="with BOM">
+    <file url="file://$PROJECT_DIR$" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/其它/countPrimes.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/其它/rand10.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/其它/sqrtX.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/climbingStairs.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/coinChange.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/editDistance.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/fib.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/houseRobber.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/houseRobber_2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/houseRobber_3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/longestIncreasingSubsequence.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/maxProfit_1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/maxProfit_2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/maxProfit_3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/maxProfit_4.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/maxProfit_5.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/maxProfit_6.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/maxSubArray.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/minPathSum.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/numTrees.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/perfectSquares.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/动态规划/uniquePaths.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/字符串/addStrings.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/字符串/compareVersionNumbers.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/栈/MyStack.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/栈/MyStack_2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/栈/basicCalculator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/栈/basicCalculator_2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/栈/dailyTemperature.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/栈/myQueue.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/栈/removeDuplicateLetters.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/栈/simplifyPath.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/栈/validParentheses.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

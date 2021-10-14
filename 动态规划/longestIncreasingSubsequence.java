@@ -1,4 +1,4 @@
-package åŠ¨æ€è§„åˆ’;
+package ¶¯Ì¬¹æ»®;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -28,11 +28,11 @@ public class longestIncreasingSubsequence {
     }
 
     /**
-     * è®¾å½“å‰å·²æ±‚å‡ºçš„æœ€é•¿ä¸Šå‡å­åºåˆ—çš„é•¿åº¦ä¸º lenï¼ˆåˆå§‹æ—¶ä¸º 1ï¼‰ï¼Œä»å‰å¾€åéå†æ•°ç»„ numsï¼Œåœ¨éå†åˆ° nums[i] æ—¶ï¼š
+     * Éèµ±Ç°ÒÑÇó³öµÄ×î³¤ÉÏÉı×ÓĞòÁĞµÄ³¤¶ÈÎª len£¨³õÊ¼Ê±Îª 1£©£¬´ÓÇ°Íùºó±éÀúÊı×é nums£¬ÔÚ±éÀúµ½ nums[i] Ê±£º
      *
-     * å¦‚æœ nums[i]>d[len] ï¼Œåˆ™ç›´æ¥åŠ å…¥åˆ° d æ•°ç»„æœ«å°¾ï¼Œå¹¶æ›´æ–° len=len+1ï¼›
+     * Èç¹û nums[i]>d[len] £¬ÔòÖ±½Ó¼ÓÈëµ½ d Êı×éÄ©Î²£¬²¢¸üĞÂ len=len+1£»
      *
-     * å¦åˆ™ï¼Œåœ¨ dd æ•°ç»„ä¸­äºŒåˆ†æŸ¥æ‰¾ï¼Œæ‰¾åˆ°ç¬¬ä¸€ä¸ªæ¯” nums[i] å°çš„æ•° d[k] ï¼Œå¹¶æ›´æ–° d[k + 1] = nums[i]
+     * ·ñÔò£¬ÔÚ dd Êı×éÖĞ¶ş·Ö²éÕÒ£¬ÕÒµ½µÚÒ»¸ö±È nums[i] Ğ¡µÄÊı d[k] £¬²¢¸üĞÂ d[k + 1] = nums[i]
      * */
 
     class Solution_1 {
@@ -48,7 +48,7 @@ public class longestIncreasingSubsequence {
                     d[len] = nums[i];
                     len++;
                 } else {
-                    int l = 1, r = len, pos = 0; // å¦‚æœæ‰¾ä¸åˆ°è¯´æ˜æ‰€æœ‰çš„æ•°éƒ½æ¯” nums[i] å¤§ï¼Œæ­¤æ—¶è¦æ›´æ–° d[1]ï¼Œæ‰€ä»¥è¿™é‡Œå°† pos è®¾ä¸º 0
+                    int l = 1, r = len, pos = 0; // Èç¹ûÕÒ²»µ½ËµÃ÷ËùÓĞµÄÊı¶¼±È nums[i] ´ó£¬´ËÊ±Òª¸üĞÂ d[1]£¬ËùÒÔÕâÀï½« pos ÉèÎª 0
                     while (l <= r) {
                         int mid = (l + r) >> 1;
                         if (d[mid] < nums[i]) {

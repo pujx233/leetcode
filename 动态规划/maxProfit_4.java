@@ -1,11 +1,11 @@
-package 动态规划;
+package ��̬�滮;
 
 /**
- * 给定一个整数数组 prices ，它的第 i 个元素 prices[i] 是一支给定的股票在第 i 天的价格。
+ * ����һ���������� prices �����ĵ� i ��Ԫ�� prices[i] ��һ֧�����Ĺ�Ʊ�ڵ� i ��ļ۸�
  *
- * 设计一个算法来计算你所能获取的最大利润。你最多可以完成 k 笔交易。
+ * ���һ���㷨�����������ܻ�ȡ�������������������� k �ʽ��ס�
  *
- * 注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
+ * ע�⣺�㲻��ͬʱ�����ʽ��ף���������ٴι���ǰ���۵�֮ǰ�Ĺ�Ʊ����
  *
  *
  * */
@@ -13,46 +13,46 @@ package 动态规划;
 public class maxProfit_4 {
     static public class Solution {
 
-        // 超出内存限制
+        // �����ڴ�����
 
         public int maxProfit(int k, int[] prices) {
             int len = prices.length;
-            // 特殊判断
+            // �����ж�
             if (k == 0 || len < 2) {
                 return 0;
             }
-            // 特殊判断，因为交易一次需要 2 天，如果 k >= len / 2，相当于没有限制
-            // 转换为「力扣」第 122 题，使用贪心算法
+            // �����жϣ���Ϊ����һ����Ҫ 2 �죬��� k >= len / 2���൱��û������
+            // ת��Ϊ�����ۡ��� 122 �⣬ʹ��̰���㷨
             if (k >= len / 2) {
                 return greedy(prices, len);
             }
 
-            // 状态转移方程里下标有 -1 的时候，为了防止数组下标越界，多开一行，因此第一维的长度是 len + 1
-            // 第二维表示交易次数，从 0 开始，因此第二维的长度是 k + 1
-            // 第三维表示是否持股，0：不持股，1：持股
+            // ״̬ת�Ʒ������±��� -1 ��ʱ��Ϊ�˷�ֹ�����±�Խ�磬�࿪һ�У���˵�һά�ĳ����� len + 1
+            // �ڶ�ά��ʾ���״������� 0 ��ʼ����˵ڶ�ά�ĳ����� k + 1
+            // ����ά��ʾ�Ƿ�ֹɣ�0�����ֹɣ�1���ֹ�
             int[][][] dp = new int[len + 1][k + 1][2];
 
-            // 初始化：把持股的部分都设置为一个较小的负值
-            // 注意：如果使用默认值 0，状态转移的过程中会做出错误的决策
+            // ��ʼ�����ѳֹɵĲ��ֶ�����Ϊһ����С�ĸ�ֵ
+            // ע�⣺���ʹ��Ĭ��ֵ 0��״̬ת�ƵĹ����л���������ľ���
             for (int i = 0; i <= len; i++) {
                 for (int j = 0; j <= k; j++) {
                     dp[i][j][1] = Integer.MIN_VALUE;
                 }
             }
 
-            // 注意：i 和 j 都有 1 个位置的偏移
+            // ע�⣺i �� j ���� 1 ��λ�õ�ƫ��
             for (int i = 1; i <= len; i++) {
                 for (int j = 1; j <= k; j++) {
                     dp[i][j][1] = Math.max(dp[i - 1][j][1], dp[i - 1][j - 1][0] - prices[i - 1]);
                     dp[i][j][0] = Math.max(dp[i - 1][j][0], dp[i - 1][j][1] + prices[i - 1]);
                 }
             }
-            // 说明：第一维和第二维状态都具有前缀性质的，输出最后一个状态即可
+            // ˵������һά�͵ڶ�ά״̬������ǰ׺���ʵģ�������һ��״̬����
             return dp[len][k][0];
         }
 
         private int greedy(int[] prices, int len) {
-            // 转换为股票系列的第 2 题，使用贪心算法完成，思路是只要有利润，就交易
+            // ת��Ϊ��Ʊϵ�еĵ� 2 �⣬ʹ��̰���㷨��ɣ�˼·��ֻҪ�����󣬾ͽ���
             int res = 0;
             for (int i = 1; i < len; i++) {
                 if (prices[i] > prices[i - 1]) {

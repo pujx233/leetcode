@@ -1,9 +1,9 @@
-package å…¶å®ƒ;
+package ÆäËü;
 
 import java.util.Arrays;
 
 /**
- * ç»Ÿè®¡æ‰€æœ‰å°äºéè´Ÿæ•´æ•° n çš„è´¨æ•°çš„æ•°é‡ã€‚
+ * Í³¼ÆËùÓĞĞ¡ÓÚ·Ç¸ºÕûÊı n µÄÖÊÊıµÄÊıÁ¿¡£
  * */
 
 public class countPrimes {

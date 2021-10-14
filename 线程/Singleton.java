@@ -1,4 +1,4 @@
-package Thread;
+package 线程;
 
 public class Singleton {
 

@@ -1,10 +1,10 @@
-package æ ˆ;
+package Õ»;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * ä¸¤ä¸ªé˜Ÿåˆ—å®ç°æ ˆ
+ * Á½¸ö¶ÓÁĞÊµÏÖÕ»
  * */
 
 class MyStack {
