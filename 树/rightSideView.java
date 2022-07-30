@@ -1,10 +1,10 @@
-package æ ‘;
+package Ê÷;
 
 
 import java.util.*;
 
 /**
- * ç»™å®šä¸€ä¸ªäºŒå‰æ ‘çš„ æ ¹èŠ‚ç‚¹ rootï¼Œæƒ³è±¡è‡ªå·±ç«™åœ¨å®ƒçš„å³ä¾§ï¼ŒæŒ‰ç…§ä»é¡¶éƒ¨åˆ°åº•éƒ¨çš„é¡ºåºï¼Œè¿”å›ä»å³ä¾§æ‰€èƒ½çœ‹åˆ°çš„èŠ‚ç‚¹å€¼ã€‚
+ * ¸ø¶¨Ò»¸ö¶ş²æÊ÷µÄ ¸ù½Úµã root£¬ÏëÏó×Ô¼ºÕ¾ÔÚËüµÄÓÒ²à£¬°´ÕÕ´Ó¶¥²¿µ½µ×²¿µÄË³Ğò£¬·µ»Ø´ÓÓÒ²àËùÄÜ¿´µ½µÄ½ÚµãÖµ¡£
  * */
 
 public class rightSideView {
@@ -23,7 +23,7 @@ public class rightSideView {
     }
 
     /**
-     * å¹¿åº¦ä¼˜å…ˆå±‚åºéå†
+     * ¹ã¶ÈÓÅÏÈ²ãĞò±éÀú
      * */
 
     public List<Integer> rightSideView(TreeNode root) {
@@ -57,14 +57,14 @@ public class rightSideView {
     }
 
     /**
-     * æ·±åº¦ä¼˜å…ˆå±‚åºéå†
+     * Éî¶ÈÓÅÏÈ²ãĞò±éÀú
      * */
 
     List<Integer> ans = new ArrayList<>();
 
     public List<Integer> rightSideView_1(TreeNode root) {
 
-        dfs(root,0);  // ä»æ ¹èŠ‚ç‚¹å¼€å§‹è®¿é—®ï¼Œæ ¹èŠ‚ç‚¹æ·±åº¦æ˜¯0
+        dfs(root,0);  // ´Ó¸ù½Úµã¿ªÊ¼·ÃÎÊ£¬¸ù½ÚµãÉî¶ÈÊÇ0
         return ans;
     }
 

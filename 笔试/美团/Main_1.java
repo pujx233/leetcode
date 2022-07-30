@@ -1,4 +1,4 @@
-package ç¬”è¯•.ç¾å›¢;
+package ±ÊÊÔ.ÃÀÍÅ;
 
 public class Main_1 {
 }

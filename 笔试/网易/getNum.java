@@ -1,10 +1,10 @@
-package ç¬”è¯•.ç½‘æ˜“;
+package ±ÊÊÔ.ÍøÒ×;
 
 import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * çŸ¥æ™“è®¡ç®—å­—ç¬¦ä¸²ä¸­ç‰¹å®šå­—ç¬¦çš„æ–¹æ³•
+ * ÖªÏş¼ÆËã×Ö·û´®ÖĞÌØ¶¨×Ö·ûµÄ·½·¨
  * */
 
 public class getNum {

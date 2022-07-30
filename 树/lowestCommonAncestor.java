@@ -1,4 +1,4 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -6,11 +6,11 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * ç»™å®šä¸€ä¸ªäºŒå‰æ ‘, æ‰¾åˆ°è¯¥æ ‘ä¸­ä¸¤ä¸ªæŒ‡å®šèŠ‚ç‚¹çš„æœ€è¿‘å…¬å…±ç¥–å…ˆã€‚
+ * ¸ø¶¨Ò»¸ö¶þ²æÊ÷, ÕÒµ½¸ÃÊ÷ÖÐÁ½¸öÖ¸¶¨½ÚµãµÄ×î½ü¹«¹²×æÏÈ¡£
  *
- * ç™¾åº¦ç™¾ç§‘ä¸­æœ€è¿‘å…¬å…±ç¥–å…ˆçš„å®šä¹‰ä¸ºï¼š
- * â€œå¯¹äºŽæœ‰æ ¹æ ‘ T çš„ä¸¤ä¸ªèŠ‚ç‚¹ pã€qï¼Œæœ€è¿‘å…¬å…±ç¥–å…ˆè¡¨ç¤ºä¸ºä¸€ä¸ªèŠ‚ç‚¹ xï¼Œ
- * æ»¡è¶³ x æ˜¯ pã€q çš„ç¥–å…ˆä¸” x çš„æ·±åº¦å°½å¯èƒ½å¤§ï¼ˆä¸€ä¸ªèŠ‚ç‚¹ä¹Ÿå¯ä»¥æ˜¯å®ƒè‡ªå·±çš„ç¥–å…ˆï¼‰ã€‚â€
+ * °Ù¶È°Ù¿ÆÖÐ×î½ü¹«¹²×æÏÈµÄ¶¨ÒåÎª£º
+ * ¡°¶ÔÓÚÓÐ¸ùÊ÷ T µÄÁ½¸ö½Úµã p¡¢q£¬×î½ü¹«¹²×æÏÈ±íÊ¾ÎªÒ»¸ö½Úµã x£¬
+ * Âú×ã x ÊÇ p¡¢q µÄ×æÏÈÇÒ x µÄÉî¶È¾¡¿ÉÄÜ´ó£¨Ò»¸ö½ÚµãÒ²¿ÉÒÔÊÇËü×Ô¼ºµÄ×æÏÈ£©¡£¡±
  * */
 
 public class lowestCommonAncestor {
@@ -28,7 +28,7 @@ public class lowestCommonAncestor {
     }
 
     /**
-     * æ·±åº¦ä¼˜å…ˆæœç´¢ï¼Œå­˜å‚¨çˆ¶å­å…³ç³»
+     * Éî¶ÈÓÅÏÈËÑË÷£¬´æ´¢¸¸×Ó¹ØÏµ
      * */
 
     class Solution {
@@ -64,20 +64,20 @@ public class lowestCommonAncestor {
 
     /**
      * 1.
-     *      1.å½“è¶Šè¿‡å¶èŠ‚ç‚¹ï¼Œåˆ™ç›´æŽ¥è¿”å›žnull ;
-     *      2.å½“rootç­‰äºŽp,qï¼Œåˆ™ç›´æŽ¥è¿”å›žroot;
-     * 2.é€’æŽ¨å·¥ä½œ:
-     *      1.å¼€å¯é€’å½’å·¦å­èŠ‚ç‚¹ï¼Œè¿”å›žå€¼è®°ä¸ºleft ;
-     *      2.å¼€å¯é€’å½’å³å­èŠ‚ç‚¹ï¼Œè¿”å›žå€¼è®°ä¸ºright ;
-     * 3.è¿”å›žå€¼:æ ¹æ®leftå’Œrightï¼Œå¯å±•å¼€ä¸ºå››ç§æƒ…å†µ;
-     *      1.å½“leftå’ŒrightåŒæ—¶ä¸ºç©º:è¯´æ˜Žrootçš„å·¦/å³å­æ ‘ä¸­éƒ½ä¸åŒ…å«p,qï¼Œè¿”å›žnull;
-     *      2.å½“leftå’ŒrightåŒæ—¶ä¸ä¸ºç©º:è¯´æ˜Žp,qåˆ†åˆ—åœ¨rootçš„å¼‚ä¾§(åˆ†åˆ«åœ¨å·¦/å³å­æ ‘)ï¼Œå› æ­¤
-     *      rootä¸ºæœ€è¿‘å…¬å…±ç¥–å…ˆï¼Œè¿”å›žroot ;
-     *      3.å½“leftä¸ºç©ºï¼Œrightä¸ä¸ºç©º: p,qéƒ½ä¸åœ¨rootçš„å·¦å­æ ‘ä¸­ï¼Œç›´æŽ¥è¿”å›žrightã€‚å…·ä½“å¯åˆ†ä¸ºä¸¤
-     *      ç§æƒ…å†µ:
-     *          1. p,qå…¶ä¸­ä¸€ä¸ªåœ¨rootçš„å³å­æ ‘ä¸­ï¼Œæ­¤æ—¶rightæŒ‡å‘p (å‡è®¾ä¸ºp) ;
-     *          2. p,qä¸¤èŠ‚ç‚¹éƒ½åœ¨root çš„å³å­æ ‘ä¸­ï¼Œæ­¤æ—¶çš„rightæŒ‡å‘æœ€è¿‘å…¬å…±ç¥–å…ˆèŠ‚ç‚¹;
-     *      4.å½“leftä¸ä¸ºç©ºï¼Œrightä¸ºç©º:ä¸Žæƒ…å†µ3.åŒç†;
+     *      1.µ±Ô½¹ýÒ¶½Úµã£¬ÔòÖ±½Ó·µ»Ønull ;
+     *      2.µ±rootµÈÓÚp,q£¬ÔòÖ±½Ó·µ»Øroot;
+     * 2.µÝÍÆ¹¤×÷:
+     *      1.¿ªÆôµÝ¹é×ó×Ó½Úµã£¬·µ»ØÖµ¼ÇÎªleft ;
+     *      2.¿ªÆôµÝ¹éÓÒ×Ó½Úµã£¬·µ»ØÖµ¼ÇÎªright ;
+     * 3.·µ»ØÖµ:¸ù¾ÝleftºÍright£¬¿ÉÕ¹¿ªÎªËÄÖÖÇé¿ö;
+     *      1.µ±leftºÍrightÍ¬Ê±Îª¿Õ:ËµÃ÷rootµÄ×ó/ÓÒ×ÓÊ÷ÖÐ¶¼²»°üº¬p,q£¬·µ»Ønull;
+     *      2.µ±leftºÍrightÍ¬Ê±²»Îª¿Õ:ËµÃ÷p,q·ÖÁÐÔÚrootµÄÒì²à(·Ö±ðÔÚ×ó/ÓÒ×ÓÊ÷)£¬Òò´Ë
+     *      rootÎª×î½ü¹«¹²×æÏÈ£¬·µ»Øroot ;
+     *      3.µ±leftÎª¿Õ£¬right²»Îª¿Õ: p,q¶¼²»ÔÚrootµÄ×ó×ÓÊ÷ÖÐ£¬Ö±½Ó·µ»Øright¡£¾ßÌå¿É·ÖÎªÁ½
+     *      ÖÖÇé¿ö:
+     *          1. p,qÆäÖÐÒ»¸öÔÚrootµÄÓÒ×ÓÊ÷ÖÐ£¬´ËÊ±rightÖ¸Ïòp (¼ÙÉèÎªp) ;
+     *          2. p,qÁ½½Úµã¶¼ÔÚroot µÄÓÒ×ÓÊ÷ÖÐ£¬´ËÊ±µÄrightÖ¸Ïò×î½ü¹«¹²×æÏÈ½Úµã;
+     *      4.µ±left²»Îª¿Õ£¬rightÎª¿Õ:ÓëÇé¿ö3.Í¬Àí;
      * */
 
     class Solution_2 {

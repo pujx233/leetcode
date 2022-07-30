@@ -5,8 +5,6 @@ package 动态规划;
  * 返回满足题意的二叉搜索树的种数。*/
 
 
-
-
 public class numTrees {
 
     public class TreeNode {

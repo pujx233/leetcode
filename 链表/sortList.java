@@ -1,7 +1,7 @@
-package é“¾è¡¨;
+package Á´±í;
 
 /**
- * ç»™ä½ é“¾è¡¨çš„å¤´ç»“ç‚¹ head ï¼Œè¯·å°†å…¶æŒ‰å‡åºæ’åˆ—å¹¶è¿”å›æ’åºåçš„é“¾è¡¨
+ * ¸øÄãÁ´±íµÄÍ·½áµã head £¬Çë½«Æä°´ÉıĞòÅÅÁĞ²¢·µ»ØÅÅĞòºóµÄÁ´±í
  * */
 
 public class sortList {
@@ -24,7 +24,7 @@ public class sortList {
     }
 
     /**
-     * è‡ªé¡¶å‘ä¸‹å½’å¹¶æ’åº
+     * ×Ô¶¥ÏòÏÂ¹é²¢ÅÅĞò
      * */
 
     class Solution {
@@ -54,7 +54,7 @@ public class sortList {
             ListNode mid = slow;
             ListNode list1 = sortList(head,mid);
 
-            // ä¸ºä»€ä¹ˆæ˜¯midä¸å°‘mid.next
+            // ÎªÊ²Ã´ÊÇmid²»ÉÙmid.next
             ListNode list2 = sortList(mid,tail);
             ListNode sorted = mergeSort(list1,list2);
 
@@ -88,7 +88,7 @@ public class sortList {
     }
 
     /**
-     * è‡ªåº•å‘ä¸Šå½’å¹¶æ’åº
+     * ×Ôµ×ÏòÉÏ¹é²¢ÅÅĞò
      * */
 
     public static class Solution_2 {
@@ -156,7 +156,7 @@ public class sortList {
 
 
     /**
-     * æ˜“è¶…æ—¶çš„å¿«é€Ÿæ’åº
+     * Ò×³¬Ê±µÄ¿ìËÙÅÅĞò
      * */
 
     public static class Solution_3 {
@@ -167,31 +167,31 @@ public class sortList {
             int l = head.val, r = head.val;
             double pivot;
             ListNode p = head, q = null,h1 = null, h2 = null;
-            while (p != null) {//æ±‚æœ€å¤§å€¼å’Œæœ€å°å€¼
+            while (p != null) {//Çó×î´óÖµºÍ×îĞ¡Öµ
                 l = Math.min(p.val, l);
                 r = Math.max(p.val, r);
                 p = p.next;
             }
-            if (l == r) return head;//å¦‚æœæœ€å¤§å€¼ç­‰äºæœ€å°å€¼ï¼Œè¯´æ˜é“¾è¡¨å€¼éƒ½æ˜¯ç›¸ç­‰çš„
-            pivot = (l + r) / 2.0;//å–pivotä¸ºï¼ˆæœ€å¤§å€¼+æœ€å°å€¼ï¼‰/2
+            if (l == r) return head;//Èç¹û×î´óÖµµÈÓÚ×îĞ¡Öµ£¬ËµÃ÷Á´±íÖµ¶¼ÊÇÏàµÈµÄ
+            pivot = (l + r) / 2.0;//È¡pivotÎª£¨×î´óÖµ+×îĞ¡Öµ£©/2
             p = head;
             while (p != null) {
-                q = p.next;//æš‚å­˜p.next
-                if(p.val <= pivot) {//h1ä»£è¡¨å°äºmidçš„éƒ¨åˆ†
+                q = p.next;//Ôİ´æp.next
+                if(p.val <= pivot) {//h1´ú±íĞ¡ÓÚmidµÄ²¿·Ö
 
-                    // è¿˜æœ‰è¿™ç§è¿æ¥é“¾è¡¨çš„æ“ä½œï¼Ÿ
+                    // »¹ÓĞÕâÖÖÁ¬½ÓÁ´±íµÄ²Ù×÷£¿
                     p.next = h1;
                     h1 = p;
                 }else {
                     p.next = h2;
                     h2 = p;
                 }
-                p = q;//ç§»åŠ¨
+                p = q;//ÒÆ¶¯
             }
-            h1 = sortList(h1);//å¯¹h1éƒ¨åˆ†æ’åº
-            h2 = sortList(h2);//å¯¹h2éƒ¨åˆ†æ’åº
+            h1 = sortList(h1);//¶Ôh1²¿·ÖÅÅĞò
+            h2 = sortList(h2);//¶Ôh2²¿·ÖÅÅĞò
             p = h1;
-            while (p.next!=null)//æŠŠä¸¤æ®µæ¥ä¸Š
+            while (p.next!=null)//°ÑÁ½¶Î½ÓÉÏ
                 p = p.next;
             p.next = h2;
             return h1;

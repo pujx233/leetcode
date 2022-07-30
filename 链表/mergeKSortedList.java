@@ -1,12 +1,12 @@
-package é“¾è¡¨;
+package Á´±í;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
- * ç»™ä½ ä¸€ä¸ªé“¾è¡¨æ•°ç»„ï¼Œæ¯ä¸ªé“¾è¡¨éƒ½å·²ç»æŒ‰å‡åºæ’åˆ—ã€‚
+ * ¸øÄãÒ»¸öÁ´±íÊı×é£¬Ã¿¸öÁ´±í¶¼ÒÑ¾­°´ÉıĞòÅÅÁĞ¡£
  *
- * è¯·ä½ å°†æ‰€æœ‰é“¾è¡¨åˆå¹¶åˆ°ä¸€ä¸ªå‡åºé“¾è¡¨ä¸­ï¼Œè¿”å›åˆå¹¶åçš„é“¾è¡¨ã€‚
+ * ÇëÄã½«ËùÓĞÁ´±íºÏ²¢µ½Ò»¸öÉıĞòÁ´±íÖĞ£¬·µ»ØºÏ²¢ºóµÄÁ´±í¡£
  * */
 
 public class mergeKSortedList {
@@ -69,7 +69,7 @@ public class mergeKSortedList {
             }
 
 
-            // æ³¨æ„é“¾è¡¨åœ°å€å˜åŒ–
+            // ×¢ÒâÁ´±íµØÖ·±ä»¯
             ListNode dummyHead = new ListNode(0);
             ListNode tail = dummyHead;
             while (!pq.isEmpty()) {

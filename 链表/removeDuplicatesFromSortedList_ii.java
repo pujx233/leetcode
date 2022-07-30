@@ -1,13 +1,13 @@
-package é“¾è¡¨;
+package Á´±í;
 
-/**å­˜åœ¨ä¸€ä¸ªæŒ‰å‡åºæ’åˆ—çš„é“¾è¡¨,ç»™ä½ è¿™ä¸ªé“¾è¡¨çš„å¤´èŠ‚ç‚¹ head ,
- * è¯·ä½ åˆ é™¤é“¾è¡¨ä¸­æ‰€æœ‰å­˜åœ¨æ•°å­—é‡å¤æƒ…å†µçš„èŠ‚ç‚¹,åªä¿ç•™åŸå§‹é“¾è¡¨ä¸­æ²¡æœ‰é‡å¤å‡ºç°çš„æ•°å­—
- * è¿”å›åŒæ ·æŒ‰å‡åºæ’åˆ—çš„ç»“æœé“¾è¡¨
+/**´æÔÚÒ»¸ö°´ÉıĞòÅÅÁĞµÄÁ´±í,¸øÄãÕâ¸öÁ´±íµÄÍ·½Úµã head ,
+ * ÇëÄãÉ¾³ıÁ´±íÖĞËùÓĞ´æÔÚÊı×ÖÖØ¸´Çé¿öµÄ½Úµã,Ö»±£ÁôÔ­Ê¼Á´±íÖĞÃ»ÓĞÖØ¸´³öÏÖµÄÊı×Ö
+ * ·µ»ØÍ¬Ñù°´ÉıĞòÅÅÁĞµÄ½á¹ûÁ´±í
  */
 
 /*
-* 1.èˆå¾—ç”¨å˜é‡ï¼Œåƒä¸‡åˆ«æƒ³ç€èŠ‚çœå˜é‡ï¼Œå¦åˆ™å®¹æ˜“è¢«é€»è¾‘ç»•æ™•
-* 2.head æœ‰å¯èƒ½éœ€è¦æ”¹åŠ¨æ—¶,å…ˆå¢åŠ ä¸€ä¸ª å‡head,è¿”å›çš„æ—¶å€™ç›´æ¥å–å‡head.next,è¿™æ ·å°±ä¸éœ€è¦ä¸ºä¿®æ”¹headå¢åŠ ä¸€å¤§å †é€»è¾‘äº†
+* 1.ÉáµÃÓÃ±äÁ¿£¬Ç§Íò±ğÏë×Å½ÚÊ¡±äÁ¿£¬·ñÔòÈİÒ×±»Âß¼­ÈÆÔÎ
+* 2.head ÓĞ¿ÉÄÜĞèÒª¸Ä¶¯Ê±,ÏÈÔö¼ÓÒ»¸ö ¼Ùhead,·µ»ØµÄÊ±ºòÖ±½ÓÈ¡¼Ùhead.next,ÕâÑù¾Í²»ĞèÒªÎªĞŞ¸ÄheadÔö¼ÓÒ»´ó¶ÑÂß¼­ÁË
 *  */
 
 
@@ -30,21 +30,21 @@ public class removeDuplicatesFromSortedList_ii {
         }
     }
 
-    /*ç”±äºå¤´èŠ‚ç‚¹å¯èƒ½å˜åŒ–ï¼Œæ‰€ä»¥è¦è®¾ç½®ä¸€ä¸ªå‡head*/
+    /*ÓÉÓÚÍ·½Úµã¿ÉÄÜ±ä»¯£¬ËùÒÔÒªÉèÖÃÒ»¸ö¼Ùhead*/
 
     public class Solution_1 {
         public ListNode deleteDuplicates(ListNode head) {
             if(head == null){
                 return null;
             }
-            int temp;   // è®°å½•é‡å¤çš„èŠ‚ç‚¹å€¼
+            int temp;   // ¼ÇÂ¼ÖØ¸´µÄ½ÚµãÖµ
             ListNode dummy = new ListNode(0,head);
             ListNode cur = dummy;
             while (cur.next!=null && cur.next.next!=null){
                 if(cur.next.val == cur.next.next.val){
                     temp = cur.next.val;
 
-                    // æ³¨æ„å¹¶åˆ—æ‰§è¡Œå­˜åœ¨å…ˆåé¡ºåºçš„é—®é¢˜
+                    // ×¢Òâ²¢ÁĞÖ´ĞĞ´æÔÚÏÈºóË³ĞòµÄÎÊÌâ
 
                     while (cur.next!=null && cur.next.val==temp){
                         cur.next = cur.next.next;
@@ -58,7 +58,7 @@ public class removeDuplicatesFromSortedList_ii {
         }
     }
 
-    /*æ–¹æ³•äºŒ:é€’å½’*/
+    /*·½·¨¶ş:µİ¹é*/
 
     public class Solution_2 {
         public ListNode deleteDuplicates(ListNode head) {

@@ -1,12 +1,12 @@
-package é“¾è¡¨;
+package Á´±í;
 
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * ç»™å®šä¸€ä¸ªé“¾è¡¨ï¼Œåˆ¤æ–­é“¾è¡¨ä¸­æ˜¯å¦æœ‰çŽ¯ã€‚
- * å¦‚æžœé“¾è¡¨ä¸­æœ‰æŸä¸ªèŠ‚ç‚¹ï¼Œå¯ä»¥é€šè¿‡è¿žç»­è·Ÿè¸ª next æŒ‡é’ˆå†æ¬¡åˆ°è¾¾ï¼Œåˆ™é“¾è¡¨ä¸­å­˜åœ¨çŽ¯ã€‚ ä¸ºäº†è¡¨ç¤ºç»™å®šé“¾è¡¨ä¸­çš„çŽ¯ï¼Œæˆ‘ä»¬ä½¿ç”¨æ•´æ•° pos æ¥è¡¨ç¤ºé“¾è¡¨å°¾è¿žæŽ¥åˆ°é“¾è¡¨ä¸­çš„ä½ç½®ï¼ˆç´¢å¼•ä»Ž 0 å¼€å§‹ï¼‰ã€‚ å¦‚æžœ pos æ˜¯ -1ï¼Œåˆ™åœ¨è¯¥é“¾è¡¨ä¸­æ²¡æœ‰çŽ¯ã€‚æ³¨æ„ï¼špos ä¸ä½œä¸ºå‚æ•°è¿›è¡Œä¼ é€’ï¼Œä»…ä»…æ˜¯ä¸ºäº†æ ‡è¯†é“¾è¡¨çš„å®žé™…æƒ…å†µã€‚
- * å¦‚æžœé“¾è¡¨ä¸­å­˜åœ¨çŽ¯ï¼Œåˆ™è¿”å›ž true ã€‚ å¦åˆ™ï¼Œè¿”å›ž false ã€‚
+ * ¸ø¶¨Ò»¸öÁ´±í£¬ÅÐ¶ÏÁ´±íÖÐÊÇ·ñÓÐ»·¡£
+ * Èç¹ûÁ´±íÖÐÓÐÄ³¸ö½Úµã£¬¿ÉÒÔÍ¨¹ýÁ¬Ðø¸ú×Ù next Ö¸ÕëÔÙ´Îµ½´ï£¬ÔòÁ´±íÖÐ´æÔÚ»·¡£ ÎªÁË±íÊ¾¸ø¶¨Á´±íÖÐµÄ»·£¬ÎÒÃÇÊ¹ÓÃÕûÊý pos À´±íÊ¾Á´±íÎ²Á¬½Óµ½Á´±íÖÐµÄÎ»ÖÃ£¨Ë÷Òý´Ó 0 ¿ªÊ¼£©¡£ Èç¹û pos ÊÇ -1£¬ÔòÔÚ¸ÃÁ´±íÖÐÃ»ÓÐ»·¡£×¢Òâ£ºpos ²»×÷Îª²ÎÊý½øÐÐ´«µÝ£¬½ö½öÊÇÎªÁË±êÊ¶Á´±íµÄÊµ¼ÊÇé¿ö¡£
+ * Èç¹ûÁ´±íÖÐ´æÔÚ»·£¬Ôò·µ»Ø true ¡£ ·ñÔò£¬·µ»Ø false ¡£
  * **/
 
 public class linklistCycle {
@@ -21,8 +21,8 @@ public class linklistCycle {
     }
 
     /**
-     * æ–¹æ³•ä¸€ï¼šå“ˆå¸Œè¡¨
-     * if (!seen.add(head)) åˆ¤æ–­æ˜¯å¦åœ¨å­˜åœ¨å“ˆå¸Œè¡¨ä¸­
+     * ·½·¨Ò»£º¹þÏ£±í
+     * if (!seen.add(head)) ÅÐ¶ÏÊÇ·ñÔÚ´æÔÚ¹þÏ£±íÖÐ
      * **/
     public class Solution {
         public boolean hasCycle(ListNode head) {
@@ -39,7 +39,7 @@ public class linklistCycle {
 
 
     /**
-     * æ–¹æ³•äºŒï¼šå¿«æ…¢æŒ‡é’ˆ
+     * ·½·¨¶þ£º¿ìÂýÖ¸Õë
      * */
 
     public class Solution_2 {

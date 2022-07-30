@@ -1,11 +1,11 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 /**
- * ç»™å®šä¸€ä¸ªäºŒå‰æ ‘ï¼Œåˆ¤æ–­å…¶æ˜¯å¦æ˜¯ä¸€ä¸ªæœ‰æ•ˆçš„äºŒå‰æœç´¢æ ‘
+ * ¸ø¶¨Ò»¸ö¶ş²æÊ÷£¬ÅĞ¶ÏÆäÊÇ·ñÊÇÒ»¸öÓĞĞ§µÄ¶ş²æËÑË÷Ê÷
  * */
 
 public class isValidBST {
@@ -23,7 +23,7 @@ public class isValidBST {
     }
 
     /**
-     * äºŒå‰æœç´¢æ ‘ä¸­åºéå†åä¸ºå‡åº
+     * ¶ş²æËÑË÷Ê÷ÖĞĞò±éÀúºóÎªÉıĞò
      * */
     class Solution_1 {
         public boolean isValidBST(TreeNode root) {
@@ -48,7 +48,7 @@ public class isValidBST {
     }
 
     /**
-     * é€’å½’
+     * µİ¹é
      * */
     class Solution_2 {
         public boolean isValidBST(TreeNode root) {

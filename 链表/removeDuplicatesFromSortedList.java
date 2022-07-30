@@ -1,8 +1,8 @@
-package é“¾è¡¨;
+package Á´±í;
 
 /**
- * å­˜åœ¨ä¸€ä¸ªæŒ‰å‡åºæ’åˆ—çš„é“¾è¡¨ï¼Œç»™ä½ è¿™ä¸ªé“¾è¡¨çš„å¤´èŠ‚ç‚¹ head ï¼Œè¯·ä½ åˆ é™¤æ‰€æœ‰é‡å¤çš„å…ƒç´ ï¼Œä½¿æ¯ä¸ªå…ƒç´ åªå‡ºç°ä¸€æ¬¡ ã€‚
- * è¿”å›åŒæ ·æŒ‰å‡åºæ’åˆ—çš„ç»“æœé“¾è¡¨
+ * ´æÔÚÒ»¸ö°´ÉıĞòÅÅÁĞµÄÁ´±í£¬¸øÄãÕâ¸öÁ´±íµÄÍ·½Úµã head £¬ÇëÄãÉ¾³ıËùÓĞÖØ¸´µÄÔªËØ£¬Ê¹Ã¿¸öÔªËØÖ»³öÏÖÒ»´Î ¡£
+ * ·µ»ØÍ¬Ñù°´ÉıĞòÅÅÁĞµÄ½á¹ûÁ´±í
  * */
 
 public class removeDuplicatesFromSortedList {
@@ -24,7 +24,7 @@ public class removeDuplicatesFromSortedList {
         }
     }
 
-    /*æ–¹æ³•ä¸€*/
+    /*·½·¨Ò»*/
 
     public class Solution_1 {
         public ListNode deleteDuplicates(ListNode head) {

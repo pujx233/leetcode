@@ -1,4 +1,4 @@
-package 绗旇瘯.鏄熺幆;
+package 笔试.星环;
 
 import java.util.*;
 
@@ -15,7 +15,7 @@ public class Main_1{
 
         int max = res[0],min = 0,ans = res[0];
 
-        // ans_1 浠ｈ〃鎸囬拡鎸囧悜澶勪负+,ans_2浠ｈ〃鎸囬拡鎸囧悜澶勪负-
+        // ans_1 代表指针指向处为+,ans_2代表指针指向处为-
         int[] ans_1 = new int[num];
         int[] ans_2 = new int[num];
 

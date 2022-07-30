@@ -1,11 +1,11 @@
-package å­—ç¬¦ä¸²;
+package ×Ö·û´®;
 
 import java.util.*;
 
 public class IpIntegerTransfer {
 
     /**
-     * IPåœ°å€è½¬åè¿›åˆ¶æ•° åè¿›åˆ¶æ•°è½¬IPåœ°å€
+     * IPµØÖ·×ªÊ®½øÖÆÊı Ê®½øÖÆÊı×ªIPµØÖ·
      *
      * @author huadekai
      *
@@ -15,7 +15,7 @@ public class IpIntegerTransfer {
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
             String str = scan.nextLine();
-            // åˆ¤æ–­è¾“å…¥æ˜¯IPåœ°å€è¿˜æ˜¯åè¿›åˆ¶æ•°
+            // ÅĞ¶ÏÊäÈëÊÇIPµØÖ·»¹ÊÇÊ®½øÖÆÊı
             if (str.contains(".")) {
                 String[] arr = str.split("\\.");
                 long[] ip = new long[arr.length];
@@ -23,7 +23,7 @@ public class IpIntegerTransfer {
                 for (int i = 0; i < arr.length; i++) {
                     ip[i] = Long.parseLong(arr[i]);
                     String a = Long.toBinaryString(ip[i]);
-                    //è½¬æˆ8ä½äºŒè¿›åˆ¶ åˆ©ç”¨String.format()æ§åˆ¶æ ¼å¼
+                    //×ª³É8Î»¶ş½øÖÆ ÀûÓÃString.format()¿ØÖÆ¸ñÊ½
                     String temp = String.format("%08d", Long.parseLong(a));
                     sb.append(temp);
                 }
@@ -33,7 +33,7 @@ public class IpIntegerTransfer {
                 String binaryChuan = Long.toBinaryString(Long.parseLong(str));
                 int len = binaryChuan.length();
                 StringBuilder sb = new StringBuilder(binaryChuan);
-                // ä¸è¶³32ä½çš„å‰é¢è¡¥0
+                // ²»×ã32Î»µÄÇ°Ãæ²¹0
                 for (int i = 0; i < 32 - len; i++) {
                     sb.insert(0, "0");
                 }

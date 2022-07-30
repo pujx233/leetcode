@@ -1,7 +1,7 @@
-package ç¬”è¯•.å°çº¢ä¹¦;
+package ±ÊÊÔ.Ğ¡ºìÊé;
 
 /**
- * æ±‚æœ€çŸ­ä½¿å…¶å‡åºæ’åˆ—æˆ–å€’åºæ’åˆ—çš„æ¬¡æ•°
+ * Çó×î¶ÌÊ¹ÆäÉıĞòÅÅÁĞ»òµ¹ĞòÅÅÁĞµÄ´ÎÊı
  * */
 
 import java.util.*;
@@ -19,7 +19,7 @@ public class Main_2{
             int[] arr2 = Arrays.copyOf(arr1, arr1.length);
             Arrays.sort(arr2);
             for(int i = 0;i < n;i++){
-                hash.put(arr2[i],i);  //æ•°ç»„å…ƒç´ æ’åºååº”è¯¥æ”¾çš„ä½ç½®
+                hash.put(arr2[i],i);  //Êı×éÔªËØÅÅĞòºóÓ¦¸Ã·ÅµÄÎ»ÖÃ
             }
 
             boolean[] vis = new boolean[n];
@@ -29,9 +29,9 @@ public class Main_2{
                     int j = i;
                     while(!vis[j]){
                         vis[j] = true;
-                        j = hash.get(arr1[j]);   //å¯»æ‰¾å¯¹åº”ä½ç½®ä¸Šçš„æ•°ä¸‹ä¸€ä¸ªåº”è¯¥æ”¾çš„ä½ç½®
+                        j = hash.get(arr1[j]);   //Ñ°ÕÒ¶ÔÓ¦Î»ÖÃÉÏµÄÊıÏÂÒ»¸öÓ¦¸Ã·ÅµÄÎ»ÖÃ
                     }
-                    loops++;    //æ‰¾å‡ºå¾ªç¯èŠ‚ä¸ªæ•°
+                    loops++;    //ÕÒ³öÑ­»·½Ú¸öÊı
                 }
             }
             System.out.println(n-loops);

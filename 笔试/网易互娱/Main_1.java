@@ -1,4 +1,4 @@
-package 绗旇瘯.缃戞槗浜掑ū;
+package 笔试.网易互娱;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
@@ -52,7 +52,7 @@ public class Main_1 {
 
             while (!deque.isEmpty()){
                 int temp = deque.poll();
-                //濡傛灉鏄粓鐐瑰垯缁撴潫
+                //如果是终点则结束
                 if (temp == N-1){
                     ans = Math.min(ans,minLen[N-1]);
                     break;

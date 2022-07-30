@@ -1,9 +1,9 @@
-package 绗旇瘯.瀹岀編涓栫晫;
+package 笔试.完美世界;
 
 public class MultiplyStrings {
 
     /**
-     * leetcode 鍘熼
+     * leetcode 原题
      * */
 
 }

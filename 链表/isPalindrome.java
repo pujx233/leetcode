@@ -1,8 +1,8 @@
-package é“¾è¡¨;
+package Á´±í;
 
 /**
- * ç»™ä½ ä¸€ä¸ªå•é“¾è¡¨çš„å¤´èŠ‚ç‚¹ head,è¯·ä½ åˆ¤æ–­è¯¥é“¾è¡¨æ˜¯å¦ä¸ºå›æ–‡é“¾è¡¨
- * å¦‚æœæ˜¯è¿”å› true;å¦åˆ™è¿”å› false
+ * ¸øÄãÒ»¸öµ¥Á´±íµÄÍ·½Úµã head,ÇëÄãÅĞ¶Ï¸ÃÁ´±íÊÇ·ñÎª»ØÎÄÁ´±í
+ * Èç¹ûÊÇ·µ»Ø true;·ñÔò·µ»Ø false
  * */
 
 
@@ -18,7 +18,7 @@ public class isPalindrome {
     }
 
     /**
-     * é“¾è¡¨ä¹Ÿå­˜åœ¨ååºéå†,è€ƒè™‘ç”¨é€’å½’æ³•è§£å†³
+     * Á´±íÒ²´æÔÚºóĞò±éÀú,¿¼ÂÇÓÃµİ¹é·¨½â¾ö
      * private void printListNode(ListNode head) {
      *     if (head == null)
      *         return;
@@ -52,7 +52,7 @@ public class isPalindrome {
     }
 
     /**
-     * å¿«æ…¢æŒ‡é’ˆ
+     * ¿ìÂıÖ¸Õë
      * */
 
     class Solution_2 {
@@ -61,11 +61,11 @@ public class isPalindrome {
                 return true;
             }
 
-            // æ‰¾åˆ°å‰åŠéƒ¨åˆ†é“¾è¡¨çš„å°¾èŠ‚ç‚¹å¹¶åè½¬ååŠéƒ¨åˆ†é“¾è¡¨
+            // ÕÒµ½Ç°°ë²¿·ÖÁ´±íµÄÎ²½Úµã²¢·´×ªºó°ë²¿·ÖÁ´±í
             ListNode firstHalfEnd = endOfFirstHalf(head);
             ListNode secondHalfStart = reverseList(firstHalfEnd.next);
 
-            // åˆ¤æ–­æ˜¯å¦å›æ–‡
+            // ÅĞ¶ÏÊÇ·ñ»ØÎÄ
             ListNode p1 = head;
             ListNode p2 = secondHalfStart;
             boolean result = true;
@@ -77,7 +77,7 @@ public class isPalindrome {
                 p2 = p2.next;
             }
 
-            // è¿˜åŸé“¾è¡¨å¹¶è¿”å›ç»“æœ
+            // »¹Ô­Á´±í²¢·µ»Ø½á¹û
             firstHalfEnd.next = reverseList(secondHalfStart);
             return result;
         }

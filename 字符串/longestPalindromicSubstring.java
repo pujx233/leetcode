@@ -1,13 +1,13 @@
-package å­—ç¬¦ä¸²;
+package ×Ö·û´®;
 
 /**
- * ç»™ä½ ä¸€ä¸ªå­—ç¬¦ä¸² sï¼Œæ‰¾åˆ° s ä¸­æœ€é•¿çš„å›æ–‡å­ä¸²ã€‚
+ * ¸øÄãÒ»¸ö×Ö·û´® s£¬ÕÒµ½ s ÖĞ×î³¤µÄ»ØÎÄ×Ó´®¡£
  * */
 
 public class longestPalindromicSubstring {
 
     /**
-     * ä¸­å¿ƒæ‰©æ•£æ³•
+     * ÖĞĞÄÀ©É¢·¨
      * */
     static class Solution {
         public String longestPalindrome(String s) {
@@ -44,7 +44,7 @@ public class longestPalindromicSubstring {
     }
 
     /**
-     * åŠ¨æ€è§„åˆ’
+     * ¶¯Ì¬¹æ»®
      * */
 
     public String longestPalindrome(String s) {
@@ -52,9 +52,9 @@ public class longestPalindromicSubstring {
             return s;
         }
         int strLen = s.length();
-        int maxStart = 0;  //æœ€é•¿å›æ–‡ä¸²çš„èµ·ç‚¹
-        int maxEnd = 0;    //æœ€é•¿å›æ–‡ä¸²çš„ç»ˆç‚¹
-        int maxLen = 1;  //æœ€é•¿å›æ–‡ä¸²çš„é•¿åº¦
+        int maxStart = 0;  //×î³¤»ØÎÄ´®µÄÆğµã
+        int maxEnd = 0;    //×î³¤»ØÎÄ´®µÄÖÕµã
+        int maxLen = 1;  //×î³¤»ØÎÄ´®µÄ³¤¶È
 
         boolean[][] dp = new boolean[strLen][strLen];
 

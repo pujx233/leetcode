@@ -1,9 +1,9 @@
-package 绗旇瘯.瀹岀編涓栫晫;
+package 笔试.完美世界;
 
 public class maxProfit {
 
     /**
-     * 鑰冭檻鍒版墸璐瑰拰鍐荤粨鐘舵�佺殑鍙樼
+     * 考虑到扣费和冻结状态的变种
      * */
 
     public int maxProfit (int k, int[] prices, int fee) {

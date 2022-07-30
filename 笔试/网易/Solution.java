@@ -1,10 +1,10 @@
-package ç¬”è¯•.ç½‘æ˜“;
+package ±ÊÊÔ.ÍøÒ×;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * æœ€å°‘2^nç»„æˆçš„ä¸ªæ•°
+ * ×îÉÙ2^n×é³ÉµÄ¸öÊı
  * */
 
 public class Solution {

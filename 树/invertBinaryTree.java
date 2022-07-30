@@ -1,10 +1,10 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * ç¿»è½¬ä¸€æ£µäºŒå‰æ ‘ã€‚
+ * ·­×ªÒ»¿Ã¶ş²æÊ÷¡£
  * */
 
 public class invertBinaryTree {
@@ -29,7 +29,7 @@ public class invertBinaryTree {
     }
 
     /**
-     * è‡ªä¸‹è€Œä¸Šé€’å½’(æ·±åº¦ä¼˜å…ˆæœç´¢)
+     * ×ÔÏÂ¶øÉÏµİ¹é(Éî¶ÈÓÅÏÈËÑË÷)
      * */
 
     class Solution {
@@ -48,7 +48,7 @@ public class invertBinaryTree {
     }
 
     /**
-     * å¹¿åº¦ä¼˜å…ˆæœç´¢
+     * ¹ã¶ÈÓÅÏÈËÑË÷
      * */
 
     class Solution_1 {

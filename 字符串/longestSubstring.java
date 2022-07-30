@@ -1,15 +1,19 @@
-package å­—ç¬¦ä¸²;/*ç»™å®šä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œè¯·ä½ æ‰¾å‡ºå…¶ä¸­ä¸å«æœ‰é‡å¤å­—ç¬¦çš„æœ€é•¿å­ä¸²çš„é•¿åº¦ã€‚*/
+package ×Ö·û´®;
 
 import java.util.HashMap;
 
+/**
+ * ¸ø¶¨Ò»¸ö×Ö·û´®£¬ÇëÄãÕÒ³öÆäÖĞ²»º¬ÓĞÖØ¸´×Ö·ûµÄ×î³¤×Ó´®µÄ³¤¶È¡£
+ * */
+
 public class longestSubstring {
 
-/*    public static void main(String[] args){
+    public static void main(String[] args){
         String s = "abcabcbb";
         System.out.println(lengthOfLongestSubstring(s));
-    }*/
+    }
 
-    // æ»‘åŠ¨çª—å£
+    // »¬¶¯´°¿Ú
     public static int lengthOfLongestSubstring(String s) {
         if(s.length()==0){
             return 0;

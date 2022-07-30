@@ -1,13 +1,13 @@
-package æ•°ç»„;
+package Êı×é;
 
 import java.util.*;
 
 public class combinationSum_2 {
 
     public static class Solution {
-        List<List<Integer>> res = new ArrayList<>(); //è®°å½•ç­”æ¡ˆ
+        List<List<Integer>> res = new ArrayList<>(); //¼ÇÂ¼´ğ°¸
         HashSet<List<Integer>> temp = new HashSet<List<Integer>>();
-        List<Integer> path = new ArrayList<>();  //è®°å½•è·¯å¾„
+        List<Integer> path = new ArrayList<>();  //¼ÇÂ¼Â·¾¶
 
         public List<List<Integer>> combinationSum2(int[] candidates, int target) {
             Arrays.sort(candidates);
@@ -31,7 +31,7 @@ public class combinationSum_2 {
                 {
                     path.add(nums[i]);
                     dfs(nums,i+1,target - nums[i]);
-                    path.remove(path.size()-1); //å›æº¯ï¼Œæ¢å¤ç°åœº
+                    path.remove(path.size()-1); //»ØËİ£¬»Ö¸´ÏÖ³¡
                 }
             }
         }

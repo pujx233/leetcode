@@ -1,4 +1,4 @@
-package ç¬”è¯•.äº”å…«åŒåŸ;
+package ±ÊÊÔ.Îå°ËÍ¬³Ç;
 
 import java.util.*;
 
@@ -8,7 +8,7 @@ public class Main_1 {
         public int[] subArraySum(int[] array, int arrayLen, int subArrayLen) {
             int[] num = new int[arrayLen];
             num[0] = array[0];
-            //å‰ç¼€å’Œ
+            //Ç°×ººÍ
             for (int i = 1; i < array.length; i++) {
                 num[i] = num[i - 1] + array[i];
             }

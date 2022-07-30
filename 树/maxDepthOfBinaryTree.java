@@ -1,14 +1,14 @@
-package 树;
+package ��;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 给定一个二叉树，找出其最大深度。
+ * ����һ�����������ҳ��������ȡ�
  *
- * 二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
+ * �����������Ϊ���ڵ㵽��ԶҶ�ӽڵ���·���ϵĽڵ�����
  *
- * 说明: 叶子节点是指没有子节点的节点。
+ * ˵��: Ҷ�ӽڵ���ָû���ӽڵ�Ľڵ㡣
  * */
 
 public class maxDepthOfBinaryTree {

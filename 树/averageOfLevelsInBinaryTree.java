@@ -1,4 +1,4 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.Deque;
 import java.util.List;
 
 /**
- * ç»™å®šä¸€ä¸ªéç©ºäºŒå‰æ ‘, è¿”å›ä¸€ä¸ªç”±æ¯å±‚èŠ‚ç‚¹å¹³å‡å€¼ç»„æˆçš„æ•°ç»„ã€‚
+ * ¸ø¶¨Ò»¸ö·Ç¿Õ¶ş²æÊ÷, ·µ»ØÒ»¸öÓÉÃ¿²ã½ÚµãÆ½¾ùÖµ×é³ÉµÄÊı×é¡£
  * */
 
 public class averageOfLevelsInBinaryTree {
@@ -68,8 +68,8 @@ public class averageOfLevelsInBinaryTree {
 
 
     /**
-     * æ·±åº¦ä¼˜å…ˆæœç´¢
-     * è¦æ±‚ç»´æŠ¤å±‚æ•°å’Œæ€»æ•°
+     * Éî¶ÈÓÅÏÈËÑË÷
+     * ÒªÇóÎ¬»¤²ãÊıºÍ×ÜÊı
      * */
 
     class Solution_2 {

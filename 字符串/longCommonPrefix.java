@@ -1,9 +1,9 @@
-package å­—ç¬¦ä¸²;
+package ×Ö·û´®;
 
 /**
- * ç¼–å†™ä¸€ä¸ªå‡½æ•°æ¥æŸ¥æ‰¾å­—ç¬¦ä¸²æ•°ç»„ä¸­çš„æœ€é•¿å…¬å…±å‰ç¼€ã€‚
+ * ±àĞ´Ò»¸öº¯ÊıÀ´²éÕÒ×Ö·û´®Êı×éÖĞµÄ×î³¤¹«¹²Ç°×º¡£
  *
- * å¦‚æœä¸å­˜åœ¨å…¬å…±å‰ç¼€ï¼Œè¿”å›ç©ºå­—ç¬¦ä¸² ""ã€‚
+ * Èç¹û²»´æÔÚ¹«¹²Ç°×º£¬·µ»Ø¿Õ×Ö·û´® ""¡£
  *
  * */
 
@@ -11,7 +11,7 @@ public class longCommonPrefix {
 
 
     /**
-     * çºµå‘æ‰«æ
+     * ×İÏòÉ¨Ãè
      * */
     class Solution {
         public String longestCommonPrefix(String[] strs) {
@@ -33,7 +33,7 @@ public class longCommonPrefix {
     }
 
     /**
-     * æ¨ªå‘æ‰«æ
+     * ºáÏòÉ¨Ãè
      * */
     class Solution_1 {
         public String longestCommonPrefix(String[] strs) {

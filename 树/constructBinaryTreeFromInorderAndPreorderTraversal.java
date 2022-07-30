@@ -1,10 +1,10 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ç»™å®šä¸€æ£µæ ‘çš„å‰åºéå† preorder ä¸ä¸­åºéå†  inorderã€‚è¯·æ„é€ äºŒå‰æ ‘å¹¶è¿”å›å…¶æ ¹èŠ‚ç‚¹ã€‚
+ * ¸ø¶¨Ò»¿ÃÊ÷µÄÇ°Ğò±éÀú preorder ÓëÖĞĞò±éÀú  inorder¡£Çë¹¹Ôì¶ş²æÊ÷²¢·µ»ØÆä¸ù½Úµã¡£
  * */
 
 public class constructBinaryTreeFromInorderAndPreorderTraversal {

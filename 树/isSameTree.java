@@ -1,11 +1,11 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * ç»™ä½ ä¸¤æ£µäºŒå‰æ ‘çš„æ ¹èŠ‚ç‚¹ p å’Œ q ï¼Œç¼–å†™ä¸€ä¸ªå‡½æ•°æ¥æ£€éªŒè¿™ä¸¤æ£µæ ‘æ˜¯å¦ç›¸åŒ
- * å¦‚æœä¸¤ä¸ªæ ‘åœ¨ç»“æ„ä¸Šç›¸åŒï¼Œå¹¶ä¸”èŠ‚ç‚¹å…·æœ‰ç›¸åŒçš„å€¼ï¼Œåˆ™è®¤ä¸ºå®ƒä»¬æ˜¯ç›¸åŒçš„
+ * ¸øÄãÁ½¿Ã¶ş²æÊ÷µÄ¸ù½Úµã p ºÍ q £¬±àĞ´Ò»¸öº¯ÊıÀ´¼ìÑéÕâÁ½¿ÃÊ÷ÊÇ·ñÏàÍ¬
+ * Èç¹ûÁ½¸öÊ÷ÔÚ½á¹¹ÉÏÏàÍ¬£¬²¢ÇÒ½Úµã¾ßÓĞÏàÍ¬µÄÖµ£¬ÔòÈÏÎªËüÃÇÊÇÏàÍ¬µÄ
  * */
 
 public class isSameTree {
@@ -24,7 +24,7 @@ public class isSameTree {
     }
 
     /**
-     * æ·±åº¦ä¼˜å…ˆæœç´¢*/
+     * Éî¶ÈÓÅÏÈËÑË÷*/
 
     class Solution_1 {
         public boolean isSameTree(TreeNode p, TreeNode q) {
@@ -41,7 +41,7 @@ public class isSameTree {
 
 
     /**
-     * å¹¿åº¦ä¼˜å…ˆæœç´¢*/
+     * ¹ã¶ÈÓÅÏÈËÑË÷*/
 
     class Solution_2 {
         public boolean isSameTree(TreeNode p, TreeNode q) {

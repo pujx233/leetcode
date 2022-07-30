@@ -1,11 +1,11 @@
-package 树;
+package ��;
 
 import java.util.*;
 
 /**
- * 给你二叉树的根节点 root 和一个整数目标和 targetSum ，找出所有 从根节点到叶子节点 路径总和等于给定目标和的路径。
+ * ����������ĸ��ڵ� root ��һ������Ŀ��� targetSum ���ҳ����� �Ӹ��ڵ㵽Ҷ�ӽڵ� ·���ܺ͵��ڸ���Ŀ��͵�·����
  *
- * 叶子节点 是指没有子节点的节点。
+ * Ҷ�ӽڵ� ��ָû���ӽڵ�Ľڵ㡣
  *
  * */
 
@@ -55,7 +55,7 @@ public class pathSum_2 {
 
 
     /**
-     * 广度优先搜索
+     * �����������
      * */
 
     class Solution_1 {

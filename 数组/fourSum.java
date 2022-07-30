@@ -17,9 +17,11 @@ public class fourSum{
 class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> quadruplets = new ArrayList<List<Integer>>();
+
         if (nums == null || nums.length < 4) {
             return quadruplets;
         }
+
         Arrays.sort(nums);
         int length = nums.length;
         for (int i = 0; i < length - 3; i++) {

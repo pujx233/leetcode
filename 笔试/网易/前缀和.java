@@ -1,12 +1,12 @@
-package ç¬”è¯•.ç½‘æ˜“;
+package ±ÊÊÔ.ÍøÒ×;
 
 import java.util.Scanner;
 
 /**
- * æ³¨æ„å‰ç¼€å’Œæ±‚è·ç¦»ï¼Œä»¥åŠå­—æ¯é—´è·æ˜¯ç¯
+ * ×¢ÒâÇ°×ººÍÇó¾àÀë£¬ÒÔ¼°×ÖÄ¸¼ä¾àÊÇ»·
  * */
 
-public class å‰ç¼€å’Œ {
+public class Ç°×ººÍ {
 
     public static void main(String[] args){
 

@@ -1,13 +1,13 @@
-package 字符串;
+package �ַ���;
 
 import java.util.*;
 
 /**
- * 给定一个只包含数字的字符串，用以表示一个 IP 地址，返回所有可能从 s 获得的 有效 IP 地址 。你可以按任何顺序返回答案。
+ * ����һ��ֻ�������ֵ��ַ��������Ա�ʾһ�� IP ��ַ���������п��ܴ� s ��õ� ��Ч IP ��ַ ������԰��κ�˳�򷵻ش𰸡�
  *
- * 有效 IP 地址 正好由四个整数（每个整数位于 0 到 255 之间组成，且不能含有前导 0），整数之间用 '.' 分隔。
+ * ��Ч IP ��ַ �������ĸ�������ÿ������λ�� 0 �� 255 ֮����ɣ��Ҳ��ܺ���ǰ�� 0��������֮���� '.' �ָ���
  *
- * 例如："0.1.2.201" 和 "192.168.1.1" 是 有效 IP 地址，但是 "0.011.255.245"、"192.168.1.312" 和 "192.168@1.1" 是 无效 IP 地址
+ * ���磺"0.1.2.201" �� "192.168.1.1" �� ��Ч IP ��ַ������ "0.011.255.245"��"192.168.1.312" �� "192.168@1.1" �� ��Ч IP ��ַ
  * */
 
 public class restoreIpAddress {
@@ -15,7 +15,7 @@ public class restoreIpAddress {
     class Solution {
 
         List<String> ans = new ArrayList<String>();
-        // 节约性能
+        // ��Լ����
         Deque<String> path = new ArrayDeque<>(4);
 
         public List<String> restoreIpAddresses(String s) {

@@ -69,7 +69,8 @@
 
 #### [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)  
 
-- [ ] 深度搜索、广度搜索
+- [x] 深度搜索
+- [x] 广度搜索
 
 #### [146. LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
 
@@ -753,3 +754,143 @@ s.indexOf(stack.peek(), i) > 0
 #### [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
 
 - [x] 单调栈
+
+#### [402. 移掉 K 位数字](https://leetcode-cn.com/problems/remove-k-digits/)
+
+- [x] 单调栈
+
+#### [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
+
+- [x] 中序遍历
+
+#### [1438. 绝对差不超过限制的最长连续子数组](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+
+- [ ] 滑动窗口+有序窗口
+- [x] 滑动窗口+单调队列
+
+#### [263. 丑数](https://leetcode-cn.com/problems/ugly-number/)
+
+- [x] 数学
+
+#### [264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)
+
+- [x] 最小堆
+- [x] 动态规划
+
+#### [149. 直线上最多的点数](https://leetcode-cn.com/problems/max-points-on-a-line/)
+
+- [x] 哈希表
+
+#### [445. 两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)
+
+- [x] 栈
+
+#### [139. 单词拆分](https://leetcode-cn.com/problems/word-break/)
+
+- [x] 动态规划
+
+#### [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)
+
+- [x] 动态规划
+
+#### [662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/)
+
+- [x] 广度优先搜索
+- [ ] 要考虑溢出的问题
+
+#### [剑指 Offer 62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
+
+- [x] 暴力
+- [x] 迭代逆推
+- [ ] 递归
+
+#### [958. 二叉树的完全性检验](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/)
+
+- [x] 广度优先搜索
+
+#### [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)
+
+- [x] 前缀和+二分查找
+- [ ] 滑动窗口
+
+#### [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
+
+- [x] 双指针
+
+#### [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)
+
+- [x] 筛选 + 判断
+- [x] 在原字符串上直接判断
+
+#### [1047. 删除字符串中的所有相邻重复项](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/)
+
+- [x] 栈
+
+#### [9. 回文数](https://leetcode-cn.com/problems/palindrome-number/)
+
+- [x] 反转一半数字
+
+#### [189. 轮转数组](https://leetcode-cn.com/problems/rotate-array/)
+
+- [x] 环形替换
+- [ ] 数组反转
+
+#### [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/)
+
+- [x] 回溯算法
+
+#### [498. 对角线遍历](https://leetcode-cn.com/problems/diagonal-traverse/)
+
+- [x] 模拟
+
+#### [207. 课程表](https://leetcode.cn/problems/course-schedule/)
+
+- [x] 拓扑排序(本质是广度优先搜索和贪心算法在图中的应用)
+
+#### [349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/)
+
+- [x] Set
+- [ ] 排序+双指针
+
+#### [135. 分发糖果](https://leetcode.cn/problems/candy/)
+
+- [x] 两次遍历
+
+#### [287. 寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/)
+
+- [x] 参考题143，将数组看作一个循环链表
+
+#### [50. Pow(x, n)](https://leetcode.cn/problems/powx-n/)
+
+- [x] 迭代
+- [x] 递归
+
+#### [59. 螺旋矩阵 II](https://leetcode.cn/problems/spiral-matrix-ii/)
+
+- [x] 模拟
+
+#### [450. 删除二叉搜索树中的节点](https://leetcode.cn/problems/delete-node-in-a-bst/)
+
+- [x] 递归
+- [ ] 迭代
+
+#### [91. 解码方法](https://leetcode.cn/problems/decode-ways/)
+
+- [x] 动态规划（跳楼梯）
+
+#### [592. 分数加减运算](https://leetcode.cn/problems/fraction-addition-and-subtraction/)
+- [x] 模拟
+- [x] 最大公约数 
+
+#### [1331. 数组序号转换](https://leetcode.cn/problems/rank-transform-of-an-array/)
+- [x] System.arraycopy(src, srcPos, dest, destPos, length);
+	- Object src : 原数组  
+	* int srcPos : 从[元数据](https://so.csdn.net/so/search?q=%E5%85%83%E6%95%B0%E6%8D%AE&spm=1001.2101.3001.7020)的起始位置开始  
+	* Object dest : 目标数组  
+	* int destPos : 目标数组的开始起始位置  
+	* int length : 要copy的数组的长度
+
+#### [593. 有效的正方形](https://leetcode.cn/problems/valid-square/)
+- [x] 4点构成的6条直线，存在相等或倍数上的关系
+- [x] 正方形中任意三点均可构成等腰直角三角形
+- [x] 考虑给出坐标重合的情况

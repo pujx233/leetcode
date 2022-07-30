@@ -1,10 +1,10 @@
-package é“¾è¡¨;
+package Á´±í;
 
 import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * ç»™ä½ ä¸€ä¸ªé“¾è¡¨ï¼Œåˆ é™¤é“¾è¡¨çš„å€’æ•°ç¬¬ n ä¸ªç»“ç‚¹ï¼Œå¹¶ä¸”è¿”å›é“¾è¡¨çš„å¤´ç»“ç‚¹ã€‚
+ * ¸øÄãÒ»¸öÁ´±í£¬É¾³ıÁ´±íµÄµ¹ÊıµÚ n ¸ö½áµã£¬²¢ÇÒ·µ»ØÁ´±íµÄÍ·½áµã¡£
  * */
 
 public class removeNthNodeFromEndOfList {
@@ -26,7 +26,7 @@ public class removeNthNodeFromEndOfList {
         }
     }
 
-    // ç›´æ¥éå†æ±‚è§£
+    // Ö±½Ó±éÀúÇó½â
 
     class Solution_1 {
         public ListNode removeNthFromEnd(ListNode head, int n) {
@@ -51,7 +51,7 @@ public class removeNthNodeFromEndOfList {
         }
     }
 
-    // ç”±äºæ˜¯å€’æ•°ç¬¬nä¸ª,é‡‡ç”¨å…¥æ ˆçš„æ–¹å¼æ±‚è§£
+    // ÓÉÓÚÊÇµ¹ÊıµÚn¸ö,²ÉÓÃÈëÕ»µÄ·½Ê½Çó½â
 
     class Solution_2 {
         public ListNode removeNthFromEnd(ListNode head, int n) {
@@ -75,7 +75,7 @@ public class removeNthNodeFromEndOfList {
 
     }
 
-    // åŒæŒ‡é’ˆ
+    // Ë«Ö¸Õë
 
     class Solution_3{
         public ListNode removeNthFromEnd(ListNode head, int n) {

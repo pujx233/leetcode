@@ -1,4 +1,4 @@
-package ç¬”è¯•.è£è€€;
+package ±ÊÊÔ.ÈÙÒ«;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -7,14 +7,14 @@ public class Main_2 {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         String command=input.nextLine();
-        String[] sub_command = command.split("\\|");  //è·å¾—å­å‘½ä»¤
+        String[] sub_command = command.split("\\|");  //»ñµÃ×ÓÃüÁî
         int sum_row=0;
         boolean error_flag=false;
         ArrayList<String> final_result=new ArrayList<>();
         for (int i = 0; i <sub_command.length ; i++) {
-            //ä¸€æ¡ä¸€æ¡å¤„ç†å‘½ä»¤
+            //Ò»ÌõÒ»Ìõ´¦ÀíÃüÁî
             String[] sub_command_array = sub_command[i].split(" ");
-            int oper_row=Integer.parseInt(sub_command_array[0]); //æ“ä½œçš„è¡Œå·
+            int oper_row=Integer.parseInt(sub_command_array[0]); //²Ù×÷µÄĞĞºÅ
             if(sum_row==0){
                 if(oper_row!=1||!sub_command_array[1].equals("i")){
                     error_flag=true;
@@ -24,8 +24,8 @@ public class Main_2 {
                     String str=getarrary(sub_command_array);
                     final_result.add(str);
                 }
-            }else{ //å¤„ç†ä¸æ˜¯é¦–è¡Œçš„
-                if(oper_row>sum_row){  //å¤„ç†çš„è¡Œå·å¤§äºæ€»è¡Œå·
+            }else{ //´¦Àí²»ÊÇÊ×ĞĞµÄ
+                if(oper_row>sum_row){  //´¦ÀíµÄĞĞºÅ´óÓÚ×ÜĞĞºÅ
                     error_flag=true;
                     break;
                 }
@@ -39,7 +39,7 @@ public class Main_2 {
                         sum_row++;
                         break;
                     case "r":
-                        final_result.set(oper_row-1,getarrary(sub_command_array));  //æ›¿æ¢
+                        final_result.set(oper_row-1,getarrary(sub_command_array));  //Ìæ»»
                         break;
                     case "d":
                         final_result.remove(oper_row-1);
@@ -48,7 +48,7 @@ public class Main_2 {
                 }
             }
         }
-        //ç»“æœè¾“å‡º
+        //½á¹ûÊä³ö
         if(error_flag==true) {
             System.out.println("error");
         }else {
@@ -57,7 +57,7 @@ public class Main_2 {
             }
         }
     }
-    //å°†æ¯æ¬¡çš„å‘½ä»¤è½¬åŒ–ä¸ºæ–‡æœ¬å†…å®¹
+    //½«Ã¿´ÎµÄÃüÁî×ª»¯ÎªÎÄ±¾ÄÚÈİ
     public static String getarrary(String []sub_command_arrary){
         int length=sub_command_arrary.length;
         String str="";
@@ -65,7 +65,7 @@ public class Main_2 {
             str+=sub_command_arrary[j];
             str+=" ";
         }
-        str+="\n";  //æ·»åŠ æ•°æ®
+        str+="\n";  //Ìí¼ÓÊı¾İ
         return str;
     }
 }

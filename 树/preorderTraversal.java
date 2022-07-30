@@ -1,4 +1,4 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.ArrayList;
 import java.util.Deque;
@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * ç»™ä½ äºŒå‰æ ‘çš„æ ¹èŠ‚ç‚¹ root ï¼Œè¿”å›å®ƒèŠ‚ç‚¹å€¼çš„ å‰åº éå†ã€‚
+ * ¸øÄã¶ş²æÊ÷µÄ¸ù½Úµã root £¬·µ»ØËü½ÚµãÖµµÄ Ç°Ğò ±éÀú¡£
  * */
 
 public class preorderTraversal {

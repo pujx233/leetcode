@@ -1,11 +1,11 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * ç»™ä½ ä¸€ä¸ªæ•´æ•° n ,è¯·ä½ ç”Ÿæˆå¹¶è¿”å›žæ‰€æœ‰ç”± n ä¸ªèŠ‚ç‚¹ç»„æˆä¸”èŠ‚ç‚¹å€¼ä»Ž 1 åˆ° n äº’ä¸ç›¸åŒçš„ä¸åŒäºŒå‰æœç´¢æ ‘
- * å¯ä»¥æŒ‰ä»»æ„é¡ºåºè¿”å›žç­”æ¡ˆ
+ * ¸øÄãÒ»¸öÕûÊý n ,ÇëÄãÉú³É²¢·µ»ØËùÓÐÓÉ n ¸ö½Úµã×é³ÉÇÒ½ÚµãÖµ´Ó 1 µ½ n »¥²»ÏàÍ¬µÄ²»Í¬¶þ²æËÑË÷Ê÷
+ * ¿ÉÒÔ°´ÈÎÒâË³Ðò·µ»Ø´ð°¸
  * */
 
 public class generateTrees {
@@ -23,9 +23,9 @@ public class generateTrees {
     }
 
     /**
-     * åˆ†æ²»æ³•
-     * å°† è¿žç»­çš„æ•°ï¼Œä¸€ä¸ªä¸ªéåŽ†ï¼Œä½œä¸ºæ ¹èŠ‚ç‚¹ï¼Œ
-     * æ¯æ¬¡éåŽ†ä¸­ï¼Œå°†å·¦è¾¹çš„æ•°ç»„å’Œå³è¾¹çš„æ•°ç»„åˆ†åˆ«è¿›è¡Œæž„å»ºå­æ ‘ï¼Œå¹¶æŽ¥åˆ°å½“å‰æ ¹èŠ‚ç‚¹ä¸Š
+     * ·ÖÖÎ·¨
+     * ½« Á¬ÐøµÄÊý£¬Ò»¸ö¸ö±éÀú£¬×÷Îª¸ù½Úµã£¬
+     * Ã¿´Î±éÀúÖÐ£¬½«×ó±ßµÄÊý×éºÍÓÒ±ßµÄÊý×é·Ö±ð½øÐÐ¹¹½¨×ÓÊ÷£¬²¢½Óµ½µ±Ç°¸ù½ÚµãÉÏ
      * */
 
     static class Solution {

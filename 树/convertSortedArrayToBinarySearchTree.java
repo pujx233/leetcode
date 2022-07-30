@@ -1,7 +1,7 @@
-package æ ‘;
+package Ê÷;
 
 /**
- * æ·±åº¦ä¼˜å…ˆæœç´¢é€’å½’
+ * Éî¶ÈÓÅÏÈËÑË÷µİ¹é
  * */
 
 public class convertSortedArrayToBinarySearchTree {

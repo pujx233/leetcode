@@ -1,12 +1,12 @@
-package 字符串;
+package �ַ���;
 
 import java.util.*;
 
 /**
- * 给定字典中的两个词，长度相等。写一个方法，把一个词转换成另一个词， 但是一次只能改变一个字符。
- * 每一步得到的新词都必须能在字典中找到。
+ * �����ֵ��е������ʣ�������ȡ�дһ����������һ����ת������һ���ʣ� ����һ��ֻ�ܸı�һ���ַ���
+ * ÿһ���õ����´ʶ����������ֵ����ҵ���
  *
- * 编写一个程序，返回一个可能的转换序列。如有多个可能的转换序列，你可以返回任何一个。
+ * ��дһ�����򣬷���һ�����ܵ�ת�����С����ж�����ܵ�ת�����У�����Է����κ�һ����
  * */
 
 public class wordTransformer {
@@ -32,11 +32,11 @@ public class wordTransformer {
                     break;
                 }
                 for(int i = 0;i < wordList.size();i ++){
-                    //如果未被访问过并且可以直接转换，则加入队列，compare()函数用来判断是否可以转换。
+                    //���δ�����ʹ����ҿ���ֱ��ת�����������У�compare()���������ж��Ƿ����ת����
                     if(!visited[i] && compare(wordList.get(i), res)){
                         deque.add(wordList.get(i));
                         visited[i] = true;
-                        //存储前驱
+                        //�洢ǰ��
                         map.put(wordList.get(i), res);
                     }
                 }
@@ -47,7 +47,7 @@ public class wordTransformer {
                 return ans;
             }
 
-            //遍历答案
+            //������
             String key = endWord;
             while(map.get(key) != beginWord){
                 ans.add(key);

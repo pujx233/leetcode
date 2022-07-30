@@ -1,4 +1,4 @@
-package çº¿ç¨‹;
+package Ïß³Ì;
 
 public class Singleton {
 
@@ -9,11 +9,11 @@ public class Singleton {
 
     public synchronized static Singleton getUniqueInstance() {
 
-        // åˆ¤æ–­å¯¹è±¡æ˜¯å¦å®ä¾‹åŒ–è¿‡ï¼Œæ²¡å®ä¾‹åŒ–å†è¿›å…¥åŠ é”ä»£ç 
+        // ÅĞ¶Ï¶ÔÏóÊÇ·ñÊµÀı»¯¹ı£¬Ã»ÊµÀı»¯ÔÙ½øÈë¼ÓËø´úÂë
 
         if (uniqueInstance == null) {
 
-            // ç±»å¯¹è±¡åŠ é”
+            // Àà¶ÔÏó¼ÓËø
 
             synchronized (Singleton.class) {
 

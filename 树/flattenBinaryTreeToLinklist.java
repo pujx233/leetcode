@@ -1,4 +1,4 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.ArrayList;
 import java.util.Deque;
@@ -6,10 +6,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * ç»™ä½ äºŒå‰æ ‘çš„æ ¹ç»“ç‚¹ root ï¼Œè¯·ä½ å°†å®ƒå±•å¼€ä¸ºä¸€ä¸ªå•é“¾è¡¨ï¼š
+ * ¸øÄã¶ş²æÊ÷µÄ¸ù½áµã root £¬ÇëÄã½«ËüÕ¹¿ªÎªÒ»¸öµ¥Á´±í£º
  *
- * å±•å¼€åçš„å•é“¾è¡¨åº”è¯¥åŒæ ·ä½¿ç”¨ TreeNode ï¼Œå…¶ä¸­ right å­æŒ‡é’ˆæŒ‡å‘é“¾è¡¨ä¸­ä¸‹ä¸€ä¸ªç»“ç‚¹ï¼Œè€Œå·¦å­æŒ‡é’ˆå§‹ç»ˆä¸º null ã€‚
- * å±•å¼€åçš„å•é“¾è¡¨åº”è¯¥ä¸äºŒå‰æ ‘ å…ˆåºéå† é¡ºåºç›¸åŒã€‚
+ * Õ¹¿ªºóµÄµ¥Á´±íÓ¦¸ÃÍ¬ÑùÊ¹ÓÃ TreeNode £¬ÆäÖĞ right ×ÓÖ¸ÕëÖ¸ÏòÁ´±íÖĞÏÂÒ»¸ö½áµã£¬¶ø×ó×ÓÖ¸ÕëÊ¼ÖÕÎª null ¡£
+ * Õ¹¿ªºóµÄµ¥Á´±íÓ¦¸ÃÓë¶ş²æÊ÷ ÏÈĞò±éÀú Ë³ĞòÏàÍ¬¡£
  * */
 
 public class flattenBinaryTreeToLinklist {
@@ -35,7 +35,7 @@ public class flattenBinaryTreeToLinklist {
 
 
     /**
-     * å‰åºéå†
+     * Ç°Ğò±éÀú
      * */
 
     class Solution {
@@ -64,7 +64,7 @@ public class flattenBinaryTreeToLinklist {
     }
 
     /**
-     * å‰åºéå†ï¼ˆè¿­ä»£ç‰ˆï¼‰
+     * Ç°Ğò±éÀú£¨µü´ú°æ£©
      * */
 
     class Solution_1 {
@@ -91,28 +91,28 @@ public class flattenBinaryTreeToLinklist {
     }
 
     /**
-     * æš´åŠ›è§£æ³•
+     * ±©Á¦½â·¨
      * */
 
     class Solution_2{
 
         public void flatten(TreeNode root) {
             while (root != null) {
-                //å·¦å­æ ‘ä¸º nullï¼Œç›´æ¥è€ƒè™‘ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
+                //×ó×ÓÊ÷Îª null£¬Ö±½Ó¿¼ÂÇÏÂÒ»¸ö½Úµã
                 if (root.left == null) {
                     root = root.right;
                 } else {
-                    // æ‰¾å·¦å­æ ‘æœ€å³è¾¹çš„èŠ‚ç‚¹
+                    // ÕÒ×ó×ÓÊ÷×îÓÒ±ßµÄ½Úµã
                     TreeNode pre = root.left;
                     while (pre.right != null) {
                         pre = pre.right;
                     }
-                    //å°†åŸæ¥çš„å³å­æ ‘æ¥åˆ°å·¦å­æ ‘çš„æœ€å³è¾¹èŠ‚ç‚¹
+                    //½«Ô­À´µÄÓÒ×ÓÊ÷½Óµ½×ó×ÓÊ÷µÄ×îÓÒ±ß½Úµã
                     pre.right = root.right;
-                    // å°†å·¦å­æ ‘æ’å…¥åˆ°å³å­æ ‘çš„åœ°æ–¹
+                    // ½«×ó×ÓÊ÷²åÈëµ½ÓÒ×ÓÊ÷µÄµØ·½
                     root.right = root.left;
                     root.left = null;
-                    // è€ƒè™‘ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
+                    // ¿¼ÂÇÏÂÒ»¸ö½Úµã
                     root = root.right;
                 }
             }

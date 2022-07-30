@@ -1,4 +1,4 @@
-package Thread;
+package Ïß³Ì;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;
@@ -8,16 +8,16 @@ public class MultiThread {
 
     public static void main(String[] args) {
 
-        // è·å–Java çº¿ç¨‹ç®¡ç†MXBean
+        // »ñÈ¡Java Ïß³Ì¹ÜÀíMXBean
 
         ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
 
-        // ä¸éœ€è¦è·å–åŒæ­¥çš„monitorå’Œsynchronizerä¿¡æ¯ï¼Œä»…è·å–çº¿ç¨‹å’Œçº¿ç¨‹å †æ ˆä¿¡æ¯
+        // ²»ĞèÒª»ñÈ¡Í¬²½µÄmonitorºÍsynchronizerĞÅÏ¢£¬½ö»ñÈ¡Ïß³ÌºÍÏß³Ì¶ÑÕ»ĞÅÏ¢
 
         ThreadInfo[] threadInfos = threadMXBean.dumpAllThreads(false,
                 false);
 
-        //éå†çº¿ç¨‹ä¿¡æ¯ï¼Œä»…æ‰“å°çº¿ç¨‹IDå’Œçº¿ç¨‹åç§°ä¿¡æ¯
+        //±éÀúÏß³ÌĞÅÏ¢£¬½ö´òÓ¡Ïß³ÌIDºÍÏß³ÌÃû³ÆĞÅÏ¢
 
         for (ThreadInfo threadInfo : threadInfos) {
 

@@ -1,10 +1,10 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ç»™ä½ äºŒå‰æœç´¢æ ‘çš„æ ¹èŠ‚ç‚¹ root ï¼Œè¯¥æ ‘ä¸­çš„ä¸¤ä¸ªèŠ‚ç‚¹è¢«é”™è¯¯åœ°äº¤æ¢ã€‚è¯·åœ¨ä¸æ”¹å˜å…¶ç»“æ„çš„æƒ…å†µä¸‹ï¼Œæ¢å¤è¿™æ£µæ ‘*/
+ * ¸øÄã¶ş²æËÑË÷Ê÷µÄ¸ù½Úµã root £¬¸ÃÊ÷ÖĞµÄÁ½¸ö½Úµã±»´íÎóµØ½»»»¡£ÇëÔÚ²»¸Ä±äÆä½á¹¹µÄÇé¿öÏÂ£¬»Ö¸´Õâ¿ÃÊ÷*/
 
 public class recoverTree {
     public class TreeNode {
@@ -21,7 +21,7 @@ public class recoverTree {
     }
 
     /**
-     * ä¸­åºéå†æ±‚è§£
+     * ÖĞĞò±éÀúÇó½â
      * */
     class Solution {
         public void recoverTree(TreeNode root) {

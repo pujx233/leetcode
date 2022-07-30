@@ -1,8 +1,8 @@
-package é“¾è¡¨;
+package Á´±í;
 
 /**
- * ç»™ä½ å•é“¾è¡¨çš„å¤´æŒ‡é’ˆ head å’Œä¸¤ä¸ªæ•´æ•° left å’Œ right ï¼Œå…¶ä¸­ left <= right
- * è¯·ä½ åè½¬ä»ä½ç½® left åˆ°ä½ç½® right çš„é“¾è¡¨èŠ‚ç‚¹ï¼Œè¿”å› åè½¬åçš„é“¾è¡¨
+ * ¸øÄãµ¥Á´±íµÄÍ·Ö¸Õë head ºÍÁ½¸öÕûÊı left ºÍ right £¬ÆäÖĞ left <= right
+ * ÇëÄã·´×ª´ÓÎ»ÖÃ left µ½Î»ÖÃ right µÄÁ´±í½Úµã£¬·µ»Ø ·´×ªºóµÄÁ´±í
  * */
 
 public class reverseList_2 {
@@ -18,11 +18,11 @@ public class reverseList_2 {
     }
 
     /**
-     * 1ã€æˆ‘ä»¬å®šä¹‰ä¸¤ä¸ªæŒ‡é’ˆï¼Œåˆ†åˆ«ç§°ä¹‹ä¸º g(guard å®ˆå«) å’Œ p(point)ã€‚
-     * æˆ‘ä»¬é¦–å…ˆæ ¹æ®æ–¹æ³•çš„å‚æ•° m ç¡®å®š g å’Œ p çš„ä½ç½®ã€‚å°† g ç§»åŠ¨åˆ°ç¬¬ä¸€ä¸ªè¦åè½¬çš„èŠ‚ç‚¹çš„å‰é¢ï¼Œå°† p ç§»åŠ¨åˆ°ç¬¬ä¸€ä¸ªè¦åè½¬çš„èŠ‚ç‚¹çš„ä½ç½®ä¸Šã€‚æˆ‘ä»¬ä»¥ m=2ï¼Œn=4ä¸ºä¾‹ã€‚
-     * 2ã€å°† p åé¢çš„å…ƒç´ åˆ é™¤ï¼Œç„¶åæ·»åŠ åˆ° g çš„åé¢ã€‚ä¹Ÿå³å¤´æ’æ³•ã€‚
-     * 3ã€æ ¹æ® m å’Œ n é‡å¤æ­¥éª¤ï¼ˆ2ï¼‰
-     * 4ã€è¿”å› dummyHead.next
+     * 1¡¢ÎÒÃÇ¶¨ÒåÁ½¸öÖ¸Õë£¬·Ö±ğ³ÆÖ®Îª g(guard ÊØÎÀ) ºÍ p(point)¡£
+     * ÎÒÃÇÊ×ÏÈ¸ù¾İ·½·¨µÄ²ÎÊı m È·¶¨ g ºÍ p µÄÎ»ÖÃ¡£½« g ÒÆ¶¯µ½µÚÒ»¸öÒª·´×ªµÄ½ÚµãµÄÇ°Ãæ£¬½« p ÒÆ¶¯µ½µÚÒ»¸öÒª·´×ªµÄ½ÚµãµÄÎ»ÖÃÉÏ¡£ÎÒÃÇÒÔ m=2£¬n=4ÎªÀı¡£
+     * 2¡¢½« p ºóÃæµÄÔªËØÉ¾³ı£¬È»ºóÌí¼Óµ½ g µÄºóÃæ¡£Ò²¼´Í·²å·¨¡£
+     * 3¡¢¸ù¾İ m ºÍ n ÖØ¸´²½Öè£¨2£©
+     * 4¡¢·µ»Ø dummyHead.next
      * */
 
     class Solution {
@@ -33,12 +33,12 @@ public class reverseList_2 {
             ListNode g = dummyHead;
             ListNode p = dummyHead.next;
 
-            // å°†æŒ‡é’ˆç§»åˆ°ç›¸åº”çš„ä½ç½®
+            // ½«Ö¸ÕëÒÆµ½ÏàÓ¦µÄÎ»ÖÃ
             for(int step = 0; step < m - 1; step++) {
                 g = g.next; p = p.next;
             }
 
-            // å¤´æ’æ³•æ’å…¥èŠ‚ç‚¹
+            // Í·²å·¨²åÈë½Úµã
             for (int i = 0; i < n - m; i++) {
                 ListNode removed = p.next;
                 p.next = p.next.next;
@@ -52,8 +52,8 @@ public class reverseList_2 {
     }
 
     /**
-     * é€’å½’
-     * åè½¬å‰Nä¸ªé“¾è¡¨
+     * µİ¹é
+     * ·´×ªÇ°N¸öÁ´±í
      * */
 
     class Solution_2 {
@@ -62,25 +62,25 @@ public class reverseList_2 {
             if (m == 1) {
                 return reverseN(head, n);
             }
-            // å‰è¿›åˆ°åè½¬çš„èµ·ç‚¹è§¦å‘ base case
+            // Ç°½øµ½·´×ªµÄÆğµã´¥·¢ base case
             head.next = reverseBetween(head.next, m - 1, n - 1);
             return head;
         }
 
-        ListNode successor = null; // åé©±èŠ‚ç‚¹
+        ListNode successor = null; // ºóÇı½Úµã
 
-        // åè½¬ä»¥ head ä¸ºèµ·ç‚¹çš„ n ä¸ªèŠ‚ç‚¹ï¼Œè¿”å›æ–°çš„å¤´ç»“ç‚¹
+        // ·´×ªÒÔ head ÎªÆğµãµÄ n ¸ö½Úµã£¬·µ»ØĞÂµÄÍ·½áµã
         ListNode reverseN(ListNode head, int n) {
             if (n == 1) {
-                // è®°å½•ç¬¬ n + 1 ä¸ªèŠ‚ç‚¹
+                // ¼ÇÂ¼µÚ n + 1 ¸ö½Úµã
                 successor = head.next;
                 return head;
             }
-            // ä»¥ head.next ä¸ºèµ·ç‚¹ï¼Œéœ€è¦åè½¬å‰ n - 1 ä¸ªèŠ‚ç‚¹
+            // ÒÔ head.next ÎªÆğµã£¬ĞèÒª·´×ªÇ° n - 1 ¸ö½Úµã
             ListNode last = reverseN(head.next, n - 1);
 
             head.next.next = head;
-            // è®©åè½¬ä¹‹åçš„ head èŠ‚ç‚¹å’Œåé¢çš„èŠ‚ç‚¹è¿èµ·æ¥
+            // ÈÃ·´×ªÖ®ºóµÄ head ½ÚµãºÍºóÃæµÄ½ÚµãÁ¬ÆğÀ´
             head.next = successor;
             return last;
         }

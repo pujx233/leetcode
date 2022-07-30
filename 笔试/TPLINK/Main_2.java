@@ -1,4 +1,5 @@
-package ç¬”è¯•.TPLINK;
+/*
+package ±ÊÊÔ.TPLINK;
 
 import java.util.*;
 
@@ -67,4 +68,4 @@ public class Main_2{
 
         return result;
     }
-}
+}*/

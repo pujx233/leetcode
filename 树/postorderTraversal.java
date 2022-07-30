@@ -1,4 +1,4 @@
-package æ ‘;
+package Ê÷;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -44,7 +44,7 @@ public class postorderTraversal {
 
 
     /**
-     * è¿­ä»£æ³•ä½¿ç”¨prevä½œä¸ºåˆ¤æ–­
+     * µü´ú·¨Ê¹ÓÃprev×÷ÎªÅÐ¶Ï
      * */
 
     class Solution_2 {

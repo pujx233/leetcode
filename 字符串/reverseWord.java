@@ -1,33 +1,33 @@
-package 字符串;
+package �ַ���;
 
 import java.util.*;
 
 /**
- * 给你一个字符串 s ，逐个翻转字符串中的所有 单词 。
+ * ����һ���ַ��� s �������ת�ַ����е����� ���� ��
  *
- * 单词 是由非空格字符组成的字符串。s 中使用至少一个空格将字符串中的 单词 分隔开。
+ * ���� ���ɷǿո��ַ���ɵ��ַ�����s ��ʹ������һ���ո��ַ����е� ���� �ָ�����
  *
- * 请你返回一个翻转 s 中单词顺序并用单个空格相连的字符串。
+ * ���㷵��һ����ת s �е���˳���õ����ո��������ַ�����
  *
- * 说明：
+ * ˵����
  *
- * 输入字符串 s 可以在前面、后面或者单词间包含多余的空格。
- * 翻转后单词间应当仅用一个空格分隔。
- * 翻转后的字符串中不应包含额外的空格。
+ * �����ַ��� s ������ǰ�桢������ߵ��ʼ��������Ŀո�
+ * ��ת�󵥴ʼ�Ӧ������һ���ո�ָ���
+ * ��ת����ַ����в�Ӧ��������Ŀո�
  *
  * */
 
 public class reverseWord {
 
     /**
-     * 调用API
+     * ����API
      * */
 
     class Solution {
         public String reverseWords(String s) {
-            // 除去开头和末尾的空白字符
+            // ��ȥ��ͷ��ĩβ�Ŀհ��ַ�
             s = s.trim();
-            // 正则匹配连续的空白字符作为分隔符分割
+            // ����ƥ�������Ŀհ��ַ���Ϊ�ָ����ָ�
             List<String> wordList = Arrays.asList(s.split("\\s+"));
             Collections.reverse(wordList);
             return String.join(" ", wordList);

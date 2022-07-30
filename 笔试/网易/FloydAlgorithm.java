@@ -1,4 +1,4 @@
-package ç¬”è¯•.ç½‘æ˜“;
+package ±ÊÊÔ.ÍøÒ×;
 
 import java.util.*;
 
@@ -7,37 +7,37 @@ public class FloydAlgorithm {
     public static int[][] path;
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥é¡¶ç‚¹æ•°å’Œè¾¹æ•°:");
-        //é¡¶ç‚¹æ•°
+        System.out.println("ÇëÊäÈë¶¥µãÊıºÍ±ßÊı:");
+        //¶¥µãÊı
         int vertex = input.nextInt();
-        //è¾¹æ•°
+        //±ßÊı
         int edge = input.nextInt();
 
         int[][] matrix = new int[vertex][vertex];
-        //åˆå§‹åŒ–é‚»æ¥çŸ©é˜µ
+        //³õÊ¼»¯ÁÚ½Ó¾ØÕó
         for (int i = 0; i < vertex; i++) {
             for (int j = 0; j < vertex; j++) {
                 matrix[i][j] = MaxValue;
             }
         }
 
-        //åˆå§‹åŒ–è·¯å¾„æ•°ç»„
+        //³õÊ¼»¯Â·¾¶Êı×é
         path = new int[matrix.length][matrix.length];
 
-        //åˆå§‹åŒ–è¾¹æƒå€¼
+        //³õÊ¼»¯±ßÈ¨Öµ
         for (int i = 0; i < edge; i++) {
-            System.out.println("è¯·è¾“å…¥ç¬¬" + (i + 1) + "æ¡è¾¹ä¸å…¶æƒå€¼:");
+            System.out.println("ÇëÊäÈëµÚ" + (i + 1) + "Ìõ±ßÓëÆäÈ¨Öµ:");
             int source = input.nextInt();
             int target = input.nextInt();
             int weight = input.nextInt();
             matrix[source][target] = weight;
         }
 
-        //è°ƒç”¨ç®—æ³•è®¡ç®—æœ€çŸ­è·¯å¾„
+        //µ÷ÓÃËã·¨¼ÆËã×î¶ÌÂ·¾¶
         floyd(matrix);
     }
 
-    //éé€’å½’å®ç°
+    //·Çµİ¹éÊµÏÖ
     public static void floyd(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
@@ -50,7 +50,7 @@ public class FloydAlgorithm {
                 for (int j = 0; j < matrix.length; j++) {
                     if (matrix[i][m] + matrix[m][j] < matrix[i][j]) {
                         matrix[i][j] = matrix[i][m] + matrix[m][j];
-                        //è®°å½•ç»ç”±å“ªä¸ªç‚¹åˆ°è¾¾
+                        //¼ÇÂ¼¾­ÓÉÄÄ¸öµãµ½´ï
                         path[i][j] = m;
                     }
                 }
@@ -61,10 +61,10 @@ public class FloydAlgorithm {
             for (int j = 0; j < matrix.length; j++) {
                 if (i != j) {
                     if (matrix[i][j] == MaxValue) {
-                        System.out.println(i + "åˆ°" + j + "ä¸å¯è¾¾");
+                        System.out.println(i + "µ½" + j + "²»¿É´ï");
                     } else {
-                        System.out.print(i + "åˆ°" + j + "çš„æœ€çŸ­è·¯å¾„é•¿åº¦æ˜¯ï¼š" + matrix[i][j]);
-                        System.out.print("æœ€çŸ­è·¯å¾„ä¸ºï¼š" + i + "->");
+                        System.out.print(i + "µ½" + j + "µÄ×î¶ÌÂ·¾¶³¤¶ÈÊÇ£º" + matrix[i][j]);
+                        System.out.print("×î¶ÌÂ·¾¶Îª£º" + i + "->");
                         findPath(i, j);
                         System.out.println(j);
                     }
@@ -73,7 +73,7 @@ public class FloydAlgorithm {
         }
     }
 
-    //é€’å½’å¯»æ‰¾è·¯å¾„
+    //µİ¹éÑ°ÕÒÂ·¾¶
     public static void findPath(int i, int j) {
         int m = path[i][j];
         if (m == -1) {

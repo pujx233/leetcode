@@ -1,16 +1,16 @@
-package å­—ç¬¦ä¸²;
+package ×Ö·û´®;
 
 import java.util.*;
 
 /**
- * ç»™ä½ ä¸€ä¸ªåªåŒ…å« '(' å’Œ ')' çš„å­—ç¬¦ä¸²ï¼Œæ‰¾å‡ºæœ€é•¿æœ‰æ•ˆï¼ˆæ ¼å¼æ­£ç¡®ä¸”è¿ç»­ï¼‰æ‹¬å·å­ä¸²çš„é•¿åº¦ã€‚
+ * ¸øÄãÒ»¸öÖ»°üº¬ '(' ºÍ ')' µÄ×Ö·û´®£¬ÕÒ³ö×î³¤ÓĞĞ§£¨¸ñÊ½ÕıÈ·ÇÒÁ¬Ğø£©À¨ºÅ×Ó´®µÄ³¤¶È¡£
  * */
 
 public class longestValidParentheses {
 
 
     /**
-     * åŠ¨æ€è§„åˆ’
+     * ¶¯Ì¬¹æ»®
      * */
 
     public static class Solution {
@@ -34,7 +34,7 @@ public class longestValidParentheses {
     }
 
     /**
-     * æ ˆ
+     * Õ»
      * */
 
     public static class Solution_1 {
